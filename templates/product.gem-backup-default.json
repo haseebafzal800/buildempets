@@ -1,0 +1,254 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "0b046c2d-5ac2-426f-b3dc-57993d38ec41": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "15a09793-4f7a-47d0-98b8-809eb3e6f34b": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><\/p><p>Digital Step-By-Step Manual<\/p><p>Want To Customize This Design? Contact Our Support<\/p><p>﻿Disclaimer: LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site<\/p>"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": true,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "9138a297-099a-46d3-83d4-c8d899f1c18c": {
+          "type": "text",
+          "settings": {
+            "text": "Number  of Bricks: {{ product.metafields.my_fields.number_of_bricks.value }}"
+          }
+        },
+        "cf05059f-17d9-46ba-9e7a-8050461c0014": {
+          "type": "text",
+          "settings": {
+            "text": "Age range: 7+"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "always",
+            "show_inventory_count": "always",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "6529e78a-12c1-4795-abd2-fde45450fd78": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/single-product-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "7dde4144-b4b9-4a53-8045-23c3fdbbb5d1": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/single-quantity-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "c6562101-85ab-423e-b484-feaf2029a00c": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/fbt-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": false,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "<p><\/p>",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "0b046c2d-5ac2-426f-b3dc-57993d38ec41",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "15a09793-4f7a-47d0-98b8-809eb3e6f34b",
+        "vendor",
+        "type",
+        "variant_picker",
+        "9138a297-099a-46d3-83d4-c8d899f1c18c",
+        "cf05059f-17d9-46ba-9e7a-8050461c0014",
+        "buy_buttons",
+        "6529e78a-12c1-4795-abd2-fde45450fd78",
+        "7dde4144-b4b9-4a53-8045-23c3fdbbb5d1",
+        "c6562101-85ab-423e-b484-feaf2029a00c",
+        "description",
+        "sharing"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "8c40fda5-bcaf-486c-8880-5583bd9c2400": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Polite Notice",
+        "text": "<p>We are determined to deliver high-quality, custom made-to-order Pet building kits for our customers. As such, order-to-door can take up to about 5-6 weeks. We just need a little bit of patience and time to collect the required LEGO parts and get it ready. Our Custom pet kits do not have a unique box in order to keep it as affordable as possible.<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_bg": "#ffffff",
+        "color_title": "#015985",
+        "color_text": "#333333"
+      }
+    },
+    "0572ef05-5503-4ef5-be65-3261548250b5": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486430949__0572ef05-5503-4ef5-be65-3261548250b5-1665151253ecd5a4d8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_86_1_28a1e827-ef52-48e5-bbea-46131d2ea8fd.png",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__0572ef05-5503-4ef5-be65-3261548250b5-1665151253ecd5a4d8-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 500,
+        "height_mobile": 280,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "55d339a3-48b6-49bd-9a70-e16dffdbfec1": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "<p>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_bg": "#ecf1f2",
+        "color_title": "#333333",
+        "color_text": "#333333"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8c40fda5-bcaf-486c-8880-5583bd9c2400",
+    "0572ef05-5503-4ef5-be65-3261548250b5",
+    "55d339a3-48b6-49bd-9a70-e16dffdbfec1",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

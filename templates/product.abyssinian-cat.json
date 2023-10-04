@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "4fccdbc2-a54d-49e7-bd04-97d14b0f3461": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": false,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size-chart"
+          }
+        },
+        "cd093922-13ea-41fe-b0c1-bed70a07a5dd": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>Number Of Bricks: <\/strong>{{ product.metafields.my_fields.number_of_bricks.value }}<\/p><p><strong>Age range:<\/strong> 10+<\/p><p><strong>Average Build Time: <\/strong>8–16 Hours<\/p>"
+          }
+        },
+        "9c70c5ff-2121-4b2c-b63b-56327c97c93a": {
+          "type": "shopify:\/\/apps\/easy-product-addons\/blocks\/spice_addons\/0099190e-a0cb-49e7-8d26-026c9d26f337",
+          "settings": {
+          }
+        },
+        "b23b871e-00c4-42f5-b2e8-8ee9dbe9b267": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>The world's 1st unbreakable building kit. Challenge your creativity and show love for your favorite monuments!<\/p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "c74788b2-3264-4853-a0d7-9984d2456a7a": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>Due to high demand, please expect possible delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "full_width": false,
+            "show_tabs": true,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "928ee058-2865-4d48-a2de-12d181a801bc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.6) -->\n{% if cart.currency.iso_code == shop.currency %}\n<script type=\"text\/javascript\">\n\/\/ Overrides:\n\/\/ var afterpay_min = 1.00;       \/\/ As per your Afterpay contract.\n\/\/ var afterpay_max = 2000.00;    \/\/ As per your Afterpay contract.\n\/\/ var afterpay_msg_size = 'sm';  \/\/ Can be 'xs', 'sm', 'md' or 'lg'.\n\/\/ var afterpay_bold_amount = true;\n\/\/ var afterpay_logo_theme = 'colour';  \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_modal_open_icon = true;\n\/\/ var afterpay_hide_upper_limit = false;\n\/\/ var afterpay_hide_lower_limit = true;\n\/\/ var afterpay_show_if_outside_limits = true;\n\/\/ var afterpay_cbt_enabled = false;\n\/\/ var afterpay_apr_loans_available = false;\n\n\/\/ var afterpay_product_integration_enabled = true;\n\/\/ var afterpay_product_selector = '#product-price-selector';\n\/\/ var afterpay_variable_price_fallback = false;\n\/\/ var afterpay_variable_price_fallback_selector = '';\n\/\/ var afterpay_variable_price_fallback_method = 'mutation';  \/\/ Can be 'mutation' or 'interval'.\n\n\/\/ var afterpay_cart_integration_enabled = true;\n\/\/ var afterpay_cart_static_selector = '#cart-subtotal-selector';\n\/\/ var afterpay_variable_subtotal_fallback = false;\n\/\/ var afterpay_variable_subtotal_fallback_selector = '';\n\/\/ var afterpay_variable_subtotal_fallback_method = 'mutation'; \/\/ Can be 'mutation' or 'interval'.\n\/\/ var afterpay_cart_dynamic_integration_enabled = false;\n\n\/\/ var afterpay_footer_logo_enabled = true;\n\/\/ var afterpay_footer_logo_format = 'icon';  \/\/ Can be 'icon', 'stacked' or 'logo'.\n\/\/ var afterpay_footer_logo_theme = 'colour'; \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_footer_logo_background = 'border';  \/\/ Can be 'border' or 'transparent'.\n\/\/ var afterpay_footer_logo_container = 'footer ul.payment-icons';\n\/\/ var afterpay_footer_logo_template = '<li class=\"payment-icon\"><object data=\"{logo_path}\" type=\"image\/svg+xml\"><\/object><\/li>';\n\n\/\/ Non-editable fields:\nvar afterpay_js_language = {{ localization.language.iso_code | slice: 0, 2 | json }};\nvar afterpay_js_country = {{ localization.country.iso_code | json }};\nvar afterpay_shop_currency = {{ shop.currency | json }};\nvar afterpay_cart_currency = {{ cart.currency.iso_code | json }};\nvar afterpay_shop_money_format = {{ shop.money_format | json }};\nvar afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};\nvar afterpay_theme_name = {{ theme.name | json }};\nvar afterpay_product = {{ product | json }};\nvar afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};\nvar afterpay_cart_total_price = {{ cart.total_price | json }};\nvar afterpay_js_snippet_version = '1.1.6';\n<\/script>\n<script type=\"text\/javascript\" src=\"https:\/\/static.afterpay.com\/shopify-afterpay-javascript.js\"><\/script>\n{% else %}\n<!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->\n{% endif %}\n<!-- End Shopify-Afterpay JavaScript Snippet (v1.1.6) -->"
+          }
+        }
+      },
+      "block_order": [
+        "4fccdbc2-a54d-49e7-bd04-97d14b0f3461",
+        "title_and_price",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "vendor",
+        "type",
+        "variant_picker",
+        "cd093922-13ea-41fe-b0c1-bed70a07a5dd",
+        "9c70c5ff-2121-4b2c-b63b-56327c97c93a",
+        "b23b871e-00c4-42f5-b2e8-8ee9dbe9b267",
+        "buy_buttons",
+        "c74788b2-3264-4853-a0d7-9984d2456a7a",
+        "description",
+        "sharing",
+        "928ee058-2865-4d48-a2de-12d181a801bc"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "0140e7df-55f8-487d-8101-581c802be864": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-1c9b091d"
+      }
+    },
+    "c0467e76-4476-4369-8cf3-1b916aa0b5df": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/C73_Abyssinian_Cats_-min.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Multiple Postures",
+        "text": "<p>Over four different postures & eye colors, with about 1200+ pieces<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#015985",
+        "color_text": "#ffffff"
+      }
+    },
+    "45f4469a-6560-422d-ad08-0ab941744324": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/223265440_181612287332581_3908084207311286357_n-min.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Show Your Cat Love!",
+        "text": "<p>Carefully recreated to the detail, so that you can build and display your favorite cat in your home or office!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#015985",
+        "color_text": "#ffffff"
+      }
+    },
+    "5a55854b-ba23-4cdc-8c4c-fdfd5a5f8bd2": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/C69_Abyssinian_Cats.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Unique & Challenging",
+        "text": "<p>The Abyssinian cat lets you showcase your creativity and add personality to your space. Display a heartfelt tribute to your favorite pet!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#015985",
+        "color_text": "#ffffff"
+      }
+    },
+    "c4bba712-7562-451c-b7c2-fa0c0b720a96": {
+      "type": "pagefly-section",
+      "settings": {
+        "section_id": "pf-5c64dd46"
+      }
+    },
+    "2997cc32-ec84-4c90-b844-a80d3f5b1352": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ezgif-2-0ee04c1bbd_cde12179-1955-42b5-905c-84c5a0a1a773.gif",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Sturdy & Strong",
+        "text": "<p>Our InLock Technology makes your pet Kit impossible to break apart!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#015985",
+        "color_text": "#ffffff"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0140e7df-55f8-487d-8101-581c802be864",
+    "c0467e76-4476-4369-8cf3-1b916aa0b5df",
+    "45f4469a-6560-422d-ad08-0ab941744324",
+    "5a55854b-ba23-4cdc-8c4c-fdfd5a5f8bd2",
+    "c4bba712-7562-451c-b7c2-fa0c0b720a96",
+    "2997cc32-ec84-4c90-b844-a80d3f5b1352",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

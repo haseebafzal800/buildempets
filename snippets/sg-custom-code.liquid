@@ -1,0 +1,85 @@
+<script id="sgcustom--dropdown"> 
+  (function(){
+    const show_hide = () => {
+      var addons = document.querySelectorAll('.spice-spa-addon-product-item');
+      let addonsHeading = document.querySelector(".spice-spa-addon-heading");
+      let addonsWrapper =  document.querySelector('.spice-spa-addon-product-wrapper')
+      addons.forEach((items) => {
+          if (items.style.display === "none") {
+           items.style.display = "flex";
+           addonsWrapper.classList.add('showAll');     
+           document.querySelector(" div.spice-spa-addon-heading i").classList.remove('fa-caret-down')
+           document.querySelector(" div.spice-spa-addon-heading i").classList.add('fa-caret-up');
+          } 
+          else {
+            items.style.display = "none";
+            addonsWrapper.classList.remove('showAll');   
+            document.querySelector(" div.spice-spa-addon-heading i").classList.remove('fa-caret-up');
+            document.querySelector(" div.spice-spa-addon-heading i").classList.add('fa-caret-down');          
+        }
+      })
+    }
+
+    const getAddons = () => {
+    let addons=document.querySelectorAll(".spice-spa-addon-product-item")
+    let addonsHeading = document.querySelector(".spice-spa-addon-heading");      
+    let heading = `${addonsHeading.innerHTML} <i class="fa fa-caret-down"></i>`;
+      let addonWrapper = document.querySelector('.spice-spa-addon-product-wrapper')
+      // addonWrapper.style.border="none"
+    addonsHeading.innerHTML= heading;
+    addonsHeading.addEventListener('click', show_hide)
+      addons.forEach((addon, index) => {
+        addon.style.display = 'none'; 
+        })
+      }       
+   document.addEventListener('spicegemsAddon:inserted',getAddons )   
+  }())
+</script>
+
+<style>
+i.fa.fa-caret-down, i.fa.fa-caret-up {
+    border: 1px solid transparent;
+    color: #000;
+    position: relative;
+    background: transparent;
+    float: right;
+    bottom: 50px;
+    font-size: 22px;
+}
+
+ .spice-spa-addon-heading {
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 22px;
+  margin-top: 15px;
+  font-size:12px;
+ }
+
+ .spice-spa-addon-product-wrapper{
+  transition: all 1s ease-in-out;
+  box-sizing: border-box;
+  overflow: auto;
+  }
+
+ .spice-spa-addon-product-wrapper.showAll {
+   height: 450px;
+   border: 1px solid #ccc!important;
+   border-top: none !important;
+   margin-bottom: 20px;
+}
+  .spice-spa-addon-product-wrapper a, .spice-spa-addon-heading ,.spice-spa-addon-product-item,.spice-spa-addon-product-title{
+   cursor: pointer!important;
+  }
+  .custom-heading{
+    line-height:1px;
+    font-size:22px;
+}
+  @media only screen and (max-width: 600px){
+     .custom-heading{
+    font-size:18px;
+}
+  }
+  p.Addon-heading {
+    margin-bottom: 0px;
+}
+</style>

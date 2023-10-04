@@ -1,0 +1,77 @@
+<header class="section_header84">
+  <div class="padding-global-5 _1">
+    <div class="container-large-3">
+      <div class="padding-section-large-8">
+        <div class="w-layout-grid header84_component">
+          <div class="w-layout-grid header84_card">
+            <div class="header84_image-wrapper">
+              {% if section.settings.image != blank %}
+              <img alt="" class="header84_image lazyload hs-lazyload hs-id-0667525d" data-src="{{ section.settings.image | img_url:'' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1919px) 780.5859375px, 1045px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="{{ section.settings.image | img_url:'' }} 500w, {{ section.settings.image | img_url:'' }} 800w, {{ section.settings.image | img_url:'' }} 1080w, {{ section.settings.image | img_url:'' }} 1091w">
+                {% endif %}
+            </div>
+            <div class="header84_card-content">
+              <div class="header84_card-content-top">
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-20">{{ section.settings.heading }}</h1>
+                </div>
+                <p class="text-size-medium-7">{{ section.settings.description }}</p>
+              </div>
+              <div class="margin-top margin-medium">
+                <div class="button-group-3">
+                  {% if section.settings.btn-text != blank %}
+                  <a href="{{ section.settings.btn-link }}" class="button-16 w-button">{{ section.settings.btn-text }}</a
+                  ><img alt="" class="image-161 _2 lazyload hs-lazyload hs-id-8ebe5bb8" data-src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/blue-stars.png?v=1677233245" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Image and Text V2",
+  "settings": [
+                    {
+                      "type":"image_picker",
+                      "id": "image",
+                      "label":"Select Image",
+                       "info": "Recommended Size: 780 × 641 px"
+                    },
+                    {
+                      "type":"text",
+                      "id": "heading",
+                      "label":"Heading"
+                    },
+                    {
+                      "type":"textarea",
+                      "id": "description",
+                      "label":"Description"
+                    },
+                    {
+                      "type":"text",
+                      "id": "btn-text",
+                      "label":"Button Text"
+                    },
+                    {
+                      "type":"url",
+                      "id": "btn-link",
+                      "label":"Button Link"
+                    }
+              ],
+   "presets": [
+     {
+       "name": "Image and Text V2"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

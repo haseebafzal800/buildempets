@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "352c7f33-0965-4642-b8be-b8785a852ecf": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "2c86eac1-a4f0-45a2-a1d6-f1e4007aaef4": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>💜 Unique portrait of your beautiful pet!<br\/>🛠️ Handcrafted with a strong hardwood frame<br\/>✨ Designed with love and care for pets<br\/>🎁 Unique gift for pet lovers!<br\/>🏴󠁵󠁳󠁡󠁳󠁿 Made in the USA<\/p>"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": true,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "fceae0a7-5ce5-4ea9-8783-4975ce527c6a": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/single-product-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "29e2aa5e-34cf-45b2-bdaf-3a2124405641": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/single-quantity-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "57ac0014-ba2a-4c53-98e0-9e0a91d3f110": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/fbt-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": true,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-10 business days <\/p><p>- Australia: 7-15 business days <\/p><p><\/p><p><strong>First Draft Design<\/strong><\/p><p>It takes about <strong>1-2 <\/strong>days for your portrait to be preview ready.<br\/>We'll continue the process after your approval<\/p><p><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "352c7f33-0965-4642-b8be-b8785a852ecf",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "2c86eac1-a4f0-45a2-a1d6-f1e4007aaef4",
+        "vendor",
+        "type",
+        "variant_picker",
+        "buy_buttons",
+        "fceae0a7-5ce5-4ea9-8783-4975ce527c6a",
+        "29e2aa5e-34cf-45b2-bdaf-3a2124405641",
+        "57ac0014-ba2a-4c53-98e0-9e0a91d3f110",
+        "description",
+        "sharing"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "a8281e83-679c-4c9b-b23f-9e02a81cea64": {
+      "type": "image-gallery",
+      "blocks": {
+        "template--16580486430949__a8281e83-679c-4c9b-b23f-9e02a81cea64-1665147069b8c4e56d-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/test.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "link": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "overlay_position": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__a8281e83-679c-4c9b-b23f-9e02a81cea64-1665147069b8c4e56d-0"
+      ],
+      "settings": {
+        "grid": 2,
+        "image_height": 300,
+        "image_height_mobile": 150,
+        "enable_margin": true,
+        "enable_carousel": true,
+        "overlay_style": "box",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_url_style": "button_1"
+      }
+    },
+    "77b978d0-e83d-4601-9c03-389e45f65162": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486430949__77b978d0-e83d-4601-9c03-389e45f65162-1665147439f941ed60-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ss_76089c79-db67-433f-8397-7c428784a907.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__77b978d0-e83d-4601-9c03-389e45f65162-1665147439f941ed60-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 760,
+        "height_mobile": 260,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>Gave this as a Christmas gift It arrived on time They loved it. Said it was the best.        <\/p>",
+            "image": "shopify:\/\/shop_images\/1-1663778995153.webp",
+            "author": "Kai V."
+          }
+        },
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>This was such a fun gift for my family! A wonderful likeness to our dog<\/p>",
+            "image": "shopify:\/\/shop_images\/22-1663779022820.webp",
+            "author": "Jennifer B."
+          }
+        },
+        "f4d26ed9-6396-4156-88ba-ad29925efb37": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>This is a perfect Christmas gift for my son and his girlfriend. They absolutely loved it!<\/p>",
+            "image": "shopify:\/\/shop_images\/painting1663779039601-1663941595556.webp",
+            "author": "Inaya Y."
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-0",
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-1",
+        "f4d26ed9-6396-4156-88ba-ad29925efb37"
+      ],
+      "settings": {
+        "title": "What People Are Are Saying",
+        "color_bg": "#ffffff",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_star": "#ffdd00",
+        "enlarge_title": true,
+        "enlarge_text": false,
+        "autoplay": false,
+        "autoplay_speed": 6,
+        "circle_images": false
+      }
+    },
+    "36d6d268-d26d-4d0c-b146-e2f9d1060298": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ny7b4cbxf-1661716863058.webp",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Our 30 Day Guarantee",
+        "text": "<p>We love our Pet Portraits and are confident you will too! That’s why we're offering a 30-Day, Risk-Free Trial. If you're not in love with your Pet Portrait, we'll give you a refund.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#1e3041",
+        "color_text": "#ffffff"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a8281e83-679c-4c9b-b23f-9e02a81cea64",
+    "77b978d0-e83d-4601-9c03-389e45f65162",
+    "5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c",
+    "36d6d268-d26d-4d0c-b146-e2f9d1060298",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

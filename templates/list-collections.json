@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "4aa02c62-3860-40e0-835f-eaf6538160e6": {
+          "type": "image",
+          "settings": {
+            "collection": "build-em-dogs",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "bfdeffe5-e561-4f8c-a67e-4a12a1173367": {
+          "type": "image",
+          "settings": {
+            "collection": "build-em-cats",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "5ea6d49f-635b-4746-8768-817dbaa3e7f6": {
+          "type": "image",
+          "settings": {
+            "collection": "other-pets",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "35a7959b-6c3f-49a6-ab37-c3c7ef76bd17": {
+          "type": "image",
+          "settings": {
+            "collection": "lego",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "022a47d7-3b2a-4150-bd75-dd161f3b7111": {
+          "type": "image",
+          "settings": {
+            "collection": "custom-building-kit",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "825f3b1f-ec85-4ef2-8972-3b8a4cdd18a1": {
+          "type": "image",
+          "settings": {
+            "collection": "architecture-monuments",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "1279cdcf-e98a-423d-9153-be0dc88b0926": {
+          "type": "image",
+          "settings": {
+            "collection": "custom-pet-portrait",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "3b386a27-38bb-4832-b114-3c7afbcba9b8": {
+          "type": "image",
+          "settings": {
+            "collection": "build-em-puzzles",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "703b5c2a-9ad4-471f-a21a-b68d88d6c103": {
+          "type": "image",
+          "settings": {
+            "collection": "accessoires-1",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "638303c8-1d79-4766-bb1c-16440c105162": {
+          "type": "image",
+          "settings": {
+            "collection": "bricks",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        },
+        "e79b44dc-dc20-4248-9eae-0a5ec9eab4c7": {
+          "type": "image",
+          "settings": {
+            "collection": "cartoon-dogs",
+            "collection_background": "#fbdfdb",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 10,
+            "color_overlay_text": "#333333",
+            "overlay_url_text": "Shop now",
+            "overlay_url_style": "link_style"
+          }
+        }
+      },
+      "block_order": [
+        "4aa02c62-3860-40e0-835f-eaf6538160e6",
+        "bfdeffe5-e561-4f8c-a67e-4a12a1173367",
+        "5ea6d49f-635b-4746-8768-817dbaa3e7f6",
+        "35a7959b-6c3f-49a6-ab37-c3c7ef76bd17",
+        "022a47d7-3b2a-4150-bd75-dd161f3b7111",
+        "825f3b1f-ec85-4ef2-8972-3b8a4cdd18a1",
+        "1279cdcf-e98a-423d-9153-be0dc88b0926",
+        "3b386a27-38bb-4832-b114-3c7afbcba9b8",
+        "703b5c2a-9ad4-471f-a21a-b68d88d6c103",
+        "638303c8-1d79-4766-bb1c-16440c105162",
+        "e79b44dc-dc20-4248-9eae-0a5ec9eab4c7"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "display_type": "selected",
+        "layout": "grid",
+        "grid": 4,
+        "grid_mobile": "2",
+        "row_count": 3,
+        "alternate_rows": false,
+        "overlay_url_text": "Shop now",
+        "overlay_url_style": "link_style",
+        "enlarge_title": false,
+        "show_vendor": false,
+        "collection_background": "#fbdfdb",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 10,
+        "color_overlay_text": "#333333"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

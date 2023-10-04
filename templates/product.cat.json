@@ -1,0 +1,601 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "4fccdbc2-a54d-49e7-bd04-97d14b0f3461": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": false,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size-chart"
+          }
+        },
+        "b23b871e-00c4-42f5-b2e8-8ee9dbe9b267": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Multiple eye colors included<\/p><p><strong>Number Of Bricks: <\/strong>{{ product.metafields.my_fields.number_of_bricks.value }}<\/p><p><strong>Age range:<\/strong> 7+<\/p><p><strong>Average Build Time: <\/strong>8–12 Hours<\/p>"
+          }
+        },
+        "cd093922-13ea-41fe-b0c1-bed70a07a5dd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>Number Of Bricks: <\/strong>{{ product.metafields.my_fields.number_of_bricks.value }}<\/p><p><strong>Age range:<\/strong> 7+<\/p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "c74788b2-3264-4853-a0d7-9984d2456a7a": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>Due to high demand, please expect possible delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "full_width": false,
+            "show_tabs": true,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "a88225dd-06c6-4dc3-93fb-8a970c963c80": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.6) -->\n{% if cart.currency.iso_code == shop.currency %}\n<script type=\"text\/javascript\">\n\/\/ Overrides:\n\/\/ var afterpay_min = 1.00;       \/\/ As per your Afterpay contract.\n\/\/ var afterpay_max = 2000.00;    \/\/ As per your Afterpay contract.\n\/\/ var afterpay_msg_size = 'sm';  \/\/ Can be 'xs', 'sm', 'md' or 'lg'.\n\/\/ var afterpay_bold_amount = true;\n\/\/ var afterpay_logo_theme = 'colour';  \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_modal_open_icon = true;\n\/\/ var afterpay_hide_upper_limit = false;\n\/\/ var afterpay_hide_lower_limit = true;\n\/\/ var afterpay_show_if_outside_limits = true;\n\/\/ var afterpay_cbt_enabled = false;\n\/\/ var afterpay_apr_loans_available = false;\n\n\/\/ var afterpay_product_integration_enabled = true;\n\/\/ var afterpay_product_selector = '#product-price-selector';\n\/\/ var afterpay_variable_price_fallback = false;\n\/\/ var afterpay_variable_price_fallback_selector = '';\n\/\/ var afterpay_variable_price_fallback_method = 'mutation';  \/\/ Can be 'mutation' or 'interval'.\n\n\/\/ var afterpay_cart_integration_enabled = true;\n\/\/ var afterpay_cart_static_selector = '#cart-subtotal-selector';\n\/\/ var afterpay_variable_subtotal_fallback = false;\n\/\/ var afterpay_variable_subtotal_fallback_selector = '';\n\/\/ var afterpay_variable_subtotal_fallback_method = 'mutation'; \/\/ Can be 'mutation' or 'interval'.\n\/\/ var afterpay_cart_dynamic_integration_enabled = false;\n\n\/\/ var afterpay_footer_logo_enabled = true;\n\/\/ var afterpay_footer_logo_format = 'icon';  \/\/ Can be 'icon', 'stacked' or 'logo'.\n\/\/ var afterpay_footer_logo_theme = 'colour'; \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_footer_logo_background = 'border';  \/\/ Can be 'border' or 'transparent'.\n\/\/ var afterpay_footer_logo_container = 'footer ul.payment-icons';\n\/\/ var afterpay_footer_logo_template = '<li class=\"payment-icon\"><object data=\"{logo_path}\" type=\"image\/svg+xml\"><\/object><\/li>';\n\n\/\/ Non-editable fields:\nvar afterpay_js_language = {{ localization.language.iso_code | slice: 0, 2 | json }};\nvar afterpay_js_country = {{ localization.country.iso_code | json }};\nvar afterpay_shop_currency = {{ shop.currency | json }};\nvar afterpay_cart_currency = {{ cart.currency.iso_code | json }};\nvar afterpay_shop_money_format = {{ shop.money_format | json }};\nvar afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};\nvar afterpay_theme_name = {{ theme.name | json }};\nvar afterpay_product = {{ product | json }};\nvar afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};\nvar afterpay_cart_total_price = {{ cart.total_price | json }};\nvar afterpay_js_snippet_version = '1.1.6';\n<\/script>\n<script type=\"text\/javascript\" src=\"https:\/\/static.afterpay.com\/shopify-afterpay-javascript.js\"><\/script>\n{% else %}\n<!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->\n{% endif %}\n<!-- End Shopify-Afterpay JavaScript Snippet (v1.1.6) -->"
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "4fccdbc2-a54d-49e7-bd04-97d14b0f3461",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "vendor",
+        "type",
+        "variant_picker",
+        "b23b871e-00c4-42f5-b2e8-8ee9dbe9b267",
+        "cd093922-13ea-41fe-b0c1-bed70a07a5dd",
+        "buy_buttons",
+        "c74788b2-3264-4853-a0d7-9984d2456a7a",
+        "description",
+        "sharing",
+        "a88225dd-06c6-4dc3-93fb-8a970c963c80"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "a39ee880-f81f-4cdf-9b76-d2ee275a52b7": {
+      "type": "video",
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=TT0gBTMN11I",
+        "cover_image": "shopify:\/\/shop_images\/ss_f6f9371d-fdd0-46dc-9907-cf0f9499ff5e.jpg",
+        "image_position": "center center",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "Building Demonstration",
+        "overlay_text": "",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
+      }
+    },
+    "80633206-ad56-4c9c-927e-677f966b9a62": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16584804401381__80633206-ad56-4c9c-927e-677f966b9a62-1673889528ea9cbccd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desk-min_1ac9def0-e47d-42e6-a1f6-8c8985b55284.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16584804401381__80633206-ad56-4c9c-927e-677f966b9a62-1673889528ea9cbccd-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "771c846a-190b-4fb5-b189-b036d542accd": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "video": "https:\/\/vimeo.com\/712846005",
+        "cover_image": "shopify:\/\/shop_images\/ss_f6f9371d-fdd0-46dc-9907-cf0f9499ff5e.jpg",
+        "image_position": "center center",
+        "height_desktop": 600,
+        "height_mobile": 280,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 50,
+        "color_overlay_text": "#000000",
+        "overlay_title": "How To Build Demonstration",
+        "overlay_text": "",
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 0,
+        "mobile_text_below": false,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "4cfea682-b334-409a-b0f4-beb91a23c25c": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16583375814885__4cfea682-b334-409a-b0f4-beb91a23c25c-16651615837399b045-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2132123_6c987080-a226-4444-b3c0-16966e23a750.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16583375814885__4cfea682-b334-409a-b0f4-beb91a23c25c-16651615837399b045-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 1000,
+        "height_mobile": 280,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "a8281e83-679c-4c9b-b23f-9e02a81cea64": {
+      "type": "image-gallery",
+      "blocks": {
+        "template--16580486430949__a8281e83-679c-4c9b-b23f-9e02a81cea64-1665147069b8c4e56d-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/test.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "link": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "overlay_position": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__a8281e83-679c-4c9b-b23f-9e02a81cea64-1665147069b8c4e56d-0"
+      ],
+      "settings": {
+        "grid": 2,
+        "image_height": 300,
+        "image_height_mobile": 150,
+        "enable_margin": true,
+        "enable_carousel": true,
+        "overlay_style": "box",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_url_style": "button_1"
+      }
+    },
+    "77b978d0-e83d-4601-9c03-389e45f65162": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486430949__77b978d0-e83d-4601-9c03-389e45f65162-1665147439f941ed60-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/testt_f4b8cadc-92f3-47bc-be32-04821bb9b730.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__77b978d0-e83d-4601-9c03-389e45f65162-1665147439f941ed60-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 280,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "7238cce2-fe34-4174-b883-71e5b0647628": {
+      "type": "video",
+      "settings": {
+        "video_url": "https:\/\/youtu.be\/PXzzwAoMVFY",
+        "cover_image": "shopify:\/\/shop_images\/threeb_bluebreezeblow_208793563_175096991260273_1499181225806527223_n.jpg",
+        "image_position": "center center",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "Unboxing (Large variant)",
+        "overlay_text": "",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
+      }
+    },
+    "559cecf2-d7a5-4abe-be55-007945e53fae": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ezgifcomgifmaker-1661713625739.gif",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Show Love For Your Favorite Pet",
+        "text": "<p>A fun and challenging experience, that delivers a cute and aesthetically beautiful pet model<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#1e3041",
+        "color_text": "#ffffff"
+      }
+    },
+    "931e78e2-215a-404e-b247-0a8849802134": {
+      "type": "video",
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=C5-qYVzmipI",
+        "cover_image": "shopify:\/\/shop_images\/inlock.jpg",
+        "image_position": "center center",
+        "color_overlay_bg": "#000000",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#ffffff",
+        "overlay_title": "Inlock Demonstration",
+        "overlay_text": "",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false
+      }
+    },
+    "ae761fe9-572d-4114-8797-2fdd3faaefa1": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "video": "https:\/\/vimeo.com\/753541529",
+        "cover_image": "shopify:\/\/shop_images\/inlock.jpg",
+        "image_position": "center center",
+        "height_desktop": 600,
+        "height_mobile": 280,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 20,
+        "color_overlay_text": "#333333",
+        "overlay_title": "InLock Demonstration",
+        "overlay_text": "",
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 0,
+        "mobile_text_below": false,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>My husband built this Corgi portrait. It looks just like his dog. We are both very happy with the results.<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/1654723257__654625fd0435490fa2779e6669b6f894__huge-1661714977479.jpg",
+            "author": "Sarah F"
+          }
+        },
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>I was under the impression that this set was similar to legos and would fall apart easily. I was wrong. The set is very sturdy. My nephew even played with it, and it stayed together.<\/p>",
+            "image": "shopify:\/\/shop_images\/1621021737__0__3qy8javd__n1rze3eo9__huge-1661715104441.jpg",
+            "author": "Susan H."
+          }
+        },
+        "f4d26ed9-6396-4156-88ba-ad29925efb37": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>They are absolutely FANTASTIC! They constantly try to help you when you need their help. Making it was amazing so much fun and challenging to do.<\/p>",
+            "image": "shopify:\/\/shop_images\/1621021738__0__oeegmo3t__eyounskp9__huge-1661715184831.jpg",
+            "author": "Inaya Y."
+          }
+        },
+        "f3e4e9e3-b757-407a-9422-a66e37a46e4b": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>Delivery is fast and smooth the quality is great easy to put together.<\/p><p>It took me around 10 hours to complete.<\/p>",
+            "image": "shopify:\/\/shop_images\/1621021738__0__g_HGcAz7__NyRQo2hN9__huge.jpg",
+            "author": "Sasha T"
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-0",
+        "template--16580486430949__5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c-1665148028f5cd0202-1",
+        "f4d26ed9-6396-4156-88ba-ad29925efb37",
+        "f3e4e9e3-b757-407a-9422-a66e37a46e4b"
+      ],
+      "settings": {
+        "title": "What People Are Are Saying",
+        "color_bg": "#ffffff",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_star": "#ffdd00",
+        "enlarge_title": true,
+        "enlarge_text": false,
+        "autoplay": false,
+        "autoplay_speed": 6,
+        "circle_images": false
+      }
+    },
+    "2997cc32-ec84-4c90-b844-a80d3f5b1352": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ezgif-2-0ee04c1bbd_cde12179-1955-42b5-905c-84c5a0a1a773.gif",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Sturdy & Strong",
+        "text": "<p>Our InLock Technology makes your Pet Kit impossible to break apart!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#1e3041",
+        "color_text": "#ffffff"
+      }
+    },
+    "36d6d268-d26d-4d0c-b146-e2f9d1060298": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ny7b4cbxf-1661716863058.webp",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Our 30 Day Guarantee",
+        "text": "<p>We love our Pet Kits and are confident you will too! That’s why we're offering a 30-Day, Risk-Free Trial. If you're not in love with your Pet Kit, we'll give you a refund.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#1e3041",
+        "color_text": "#ffffff"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a39ee880-f81f-4cdf-9b76-d2ee275a52b7",
+    "80633206-ad56-4c9c-927e-677f966b9a62",
+    "771c846a-190b-4fb5-b189-b036d542accd",
+    "4cfea682-b334-409a-b0f4-beb91a23c25c",
+    "a8281e83-679c-4c9b-b23f-9e02a81cea64",
+    "77b978d0-e83d-4601-9c03-389e45f65162",
+    "7238cce2-fe34-4174-b883-71e5b0647628",
+    "559cecf2-d7a5-4abe-be55-007945e53fae",
+    "931e78e2-215a-404e-b247-0a8849802134",
+    "ae761fe9-572d-4114-8797-2fdd3faaefa1",
+    "5cf2b382-37c1-43cd-b9d0-7c1048f4ef7c",
+    "2997cc32-ec84-4c90-b844-a80d3f5b1352",
+    "36d6d268-d26d-4d0c-b146-e2f9d1060298",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

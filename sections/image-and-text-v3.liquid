@@ -1,0 +1,78 @@
+<header class="section_header1">
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="padding-section-large-9">
+        <div class="w-layout-grid header1_component-2">
+          <div class="header1_content">
+            <div class="layout192_content">
+              <div class="margin-bottom margin-xsmall _2">
+                {% if section.settings.subheading != blank %}
+                  <div class="text-weight-semibold _4">{{ section.settings.subheading }}</div>
+                  <img alt="" class="image-164 _2 lazyload hs-lazyload hs-id-fdef0abb" data-src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/blue-stars.png?v=1677233245" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                {% endif %}
+              </div>
+              <div class="margin-bottom margin-small">
+                <h2 class="heading-16">
+                  {{ section.settings.heading }}
+                </h2>
+              </div>
+              <p class="text-size-medium-3 _1">{{ section.settings.description1 }}</p>
+            </div>
+            <p class="text-size-medium-3 _3">
+              {{ section.settings.description2 }}
+            </p>
+          </div>
+          <div class="header1_image-wrapper">
+            {% if section.settings.image != blank %}
+              <img alt="" class="header1_image-2 lazyload hs-lazyload hs-id-a447e59d" data-src="{{ section.settings.image | img_url:'' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1439px) 42vw, 600px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="{{ section.settings.image | img_url:'' }} 500w, {{ section.settings.image | img_url:'' }} 765w">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Image and text V3",
+  "settings": [
+                    {
+                      "type":"text",
+                      "id": "subheading",
+                      "label":"Sub Heading"
+                    },
+                    {
+                      "type":"text",
+                      "id": "heading",
+                      "label":"Heading"
+                    },
+                    {
+                      "type":"textarea",
+                      "id": "description1",
+                      "label":"Description One "
+                    },
+                    {
+                      "type":"textarea",
+                      "id": "description2",
+                      "label":"Description Two"
+                    },
+                    {
+                      "type":"image_picker",
+                      "id": "image",
+                      "label":"Select Image",
+                       "info": "Recommended Size: 600 × 682 px"
+                    }
+              ],
+   "presets": [
+     {
+        "name": "Image and text V3"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

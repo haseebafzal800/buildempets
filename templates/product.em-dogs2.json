@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main2": {
+      "type": "main-em-dogs",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "0b046c2d-5ac2-426f-b3dc-57993d38ec41": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "15a09793-4f7a-47d0-98b8-809eb3e6f34b": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>Digital Step-By-Step Manual<\/strong><\/p><p>This building kit uses LEGO bricks.<\/p><p>Want To <strong>Customize This Design?<\/strong> <a href=\"https:\/\/www.buildempets.com\/pages\/contact-us\" title=\"https:\/\/www.buildempets.com\/pages\/contact-us\">Contact us here<\/a><\/p><p>﻿Disclaimer: LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site<\/p>"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": true,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "9138a297-099a-46d3-83d4-c8d899f1c18c": {
+          "type": "text",
+          "settings": {
+            "text": "Number  of Bricks: {{ product.metafields.my_fields.number_of_bricks.value }}"
+          }
+        },
+        "cf05059f-17d9-46ba-9e7a-8050461c0014": {
+          "type": "text",
+          "settings": {
+            "text": "Age range: 7+"
+          }
+        },
+        "e7e18e86-7473-46a0-842c-843ea460c279": {
+          "type": "shopify:\/\/apps\/epa-easy-product-addons\/blocks\/spice_addons\/0099190e-a0cb-49e7-8d26-026c9d26f337",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "always",
+            "show_inventory_count": "always",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": false,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "<p><\/p>",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "0b046c2d-5ac2-426f-b3dc-57993d38ec41",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "15a09793-4f7a-47d0-98b8-809eb3e6f34b",
+        "vendor",
+        "type",
+        "variant_picker",
+        "9138a297-099a-46d3-83d4-c8d899f1c18c",
+        "cf05059f-17d9-46ba-9e7a-8050461c0014",
+        "e7e18e86-7473-46a0-842c-843ea460c279",
+        "buy_buttons",
+        "description",
+        "sharing"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    }
+  },
+  "order": [
+    "main2"
+  ]
+}

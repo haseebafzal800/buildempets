@@ -1,0 +1,187 @@
+<style>
+    .customVariantWrapper{
+      position: realtive;
+    }
+
+    .customVariantWrapper .dimention_image_container {
+      width: 100px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    .wrapper-class-varient{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%
+    }
+    .dimensions-block{
+      width: 30%;
+    }
+    .variant-variant-section{
+      width: 70%;
+    }
+    .fieldset-inner{
+      width: 100%
+    }
+    @media only screen and (max-width:767.98px)
+    {
+      .fieldset-inner label{
+        width: 30px;
+      }
+      .dimensions-block h3{
+        font-size: 18px;
+        margin: 0px;
+      }
+      .dimention_image_container{
+        margin:0px;
+      }
+      .size-swatch
+      {
+        min-width: 100px;
+        font-size: 12px;
+        padding: 5px;
+      }
+      .dimention_image_container img{
+        width: 100% !important;
+        height: 100% !important;
+      }
+      label.emswatch.button-varient-oval.color-swatch {
+        min-width: 40px;
+      }
+       label.size-swatch::after {
+          left: 4px !important;
+       }
+      label.size-swatch {
+      padding-left: 40px !important;
+      }
+    }
+
+    .main-slider .slick-prev {
+      font-size: 20px;
+    }
+    .main-slider .slick-prev:after {
+      content: '<';
+      font-size: 20px;
+      color: #000;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .button-varient-square{
+       background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+      outline: none;
+      box-sizing: border-box;
+      border: 3px solid rgb(220, 220, 220);
+      border-radius: 18%;
+    }
+    label.size-swatch{
+      position: relative;
+      z-index: 999;
+  }
+    label.size-swatch::after {
+      content: "";
+      background-image: url(https://cdn.shopify.com/s/files/1/0257/5705/7114/files/Choose_your_size.png?v=1687459476);
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 14px;
+  }
+</style>
+
+<div class="customVariantWrapper">
+  <div class="wrapper-class-varient">
+    <div class="dimensions-block">
+      <!-- variants metafield -->
+      <div class="dimention_image_container">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/Screenshot_983.png?v=1689013380"
+          width="50"
+          height="50"
+        >
+      </div>
+      <p class="dimensions-block-content">
+        {% for variant in product.variants %}
+          {% if product.selected_or_first_available_variant.id == variant.id %}
+            {{ variant.metafields.custom.new_dimensions.value }}
+          {% endif %}
+        {% endfor %}
+      </p>
+      <h3>Dimensions</h3>
+    </div>
+    <div class="variant-section">
+      {% for option in product.options_with_values %}
+        <div class="variant-row">
+          <fieldset class="fieldset-wrapper">
+            <legend class="em-legend">
+              <span class="variant-optionname">{{ option.name }}</span>:
+              <span class="custom-valueShow">{{ option.selected_value }}</span>
+            </legend>
+            <div class="fieldset-inner">
+              {% for value in option.values %}
+                <span class="emIndex__{{ forloop.parentloop.index  }}">
+                  <input
+                    type="radio"
+                    name="{{ option.name }}"
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %}
+                      checked
+                    {% endif %}
+                    id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                  >
+
+                  {% if option.name == 'Choose your color' %}
+                    <label
+                      class="emswatch button-varient-oval color-swatch index-{{ forloop.index }}"
+                      data-variantName="{{ value }}"
+                      style="background-image:url({{ value | append:'.png' | file_url }})"
+                      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                    >
+                    </label>
+                  {% elsif option.name == 'Choose your size' %}
+                    <label
+                      class="emswatch size-swatch button-varients size-{{ forloop.index0 }} index-{{ forloop.index }}"
+                      data-variantName="{{ value }}"
+                      style=""
+                      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                    >
+                      <!--
+                        <img src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/Choose_your_size.png?v=1687459476">
+                      -->
+                      {{ value }}
+                    </label>
+
+                  {% else %}
+                    {% assign posturevalue = product.title
+                      | append: '-'
+                      | append: value
+                      | downcase
+                      | replace: ' ', '-'
+                    %}
+                    <label
+                      class="emswatch button-varient-square posture-swatch  index-{{ forloop.index }}"
+                      data-variantName="{{ value }}"
+                      style="background-image:url({{ posturevalue | append:'.png' | file_url }})"
+                      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                    >
+                    </label>
+                  {% endif %}
+                </span>
+              {% endfor %}
+            </div>
+          </fieldset>
+
+          {%- if show_size_chart == true and option.name == block.settings.size_chart_option_name -%}
+            <a href="{{ size_chart_page.url }}" class="standard-link tiny-text size-chart-link js-size-chart-open">
+              {{- 'products.product.show_size_chart' | t -}}
+            </a>
+          {%- endif -%}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

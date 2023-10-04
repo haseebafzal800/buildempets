@@ -1,0 +1,354 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "5505a7b6-5bf4-409e-b034-6eebf6544ee1": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "411b0384-194a-4ec0-b790-65fa8668ed6a": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>1:1 Replica of your pet!<\/p><p>Digital Step-By-Step Manual<\/p><p>Must Include Email Address For Custom Kits<\/p><p>Please include pictures of: Front, Back, Side<\/p><p><strong>﻿Disclaimer: <\/strong>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site<\/p>"
+          }
+        },
+        "25724792-00bf-4b98-9551-d2a635c2f098": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": " 1:1 LEGO replica of your pet!"
+          }
+        },
+        "321d16be-e51f-474b-963a-1d7f8d7cee61": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Digital Step-By-Step Manual"
+          }
+        },
+        "f3729f1d-c7b5-454f-a3bd-83bd31da9261": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Must Include Email Address For Custom Kits<\/p>"
+          }
+        },
+        "086438bc-4f1b-4dac-b392-6ccd0941cf26": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Please include pictures of: Front, Back, Side"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": true,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": false,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-14 business days <\/p><p>- UK: 7-18 business days <\/p><p>- Australia: 7-18 business days <\/p><p>- Europe: 7-18 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "<p><\/p>",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "5505a7b6-5bf4-409e-b034-6eebf6544ee1",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "411b0384-194a-4ec0-b790-65fa8668ed6a",
+        "25724792-00bf-4b98-9551-d2a635c2f098",
+        "321d16be-e51f-474b-963a-1d7f8d7cee61",
+        "f3729f1d-c7b5-454f-a3bd-83bd31da9261",
+        "086438bc-4f1b-4dac-b392-6ccd0941cf26",
+        "vendor",
+        "type",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "sharing"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "0572ef05-5503-4ef5-be65-3261548250b5": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486430949__0572ef05-5503-4ef5-be65-3261548250b5-1665151253ecd5a4d8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_22_09aee995-81fa-470f-99f6-a79fd556feda.png",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486430949__0572ef05-5503-4ef5-be65-3261548250b5-1665151253ecd5a4d8-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 660,
+        "height_mobile": 220,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "9d2b923e-33f1-4433-85f3-4e22a88e449e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16583389544677__9d2b923e-33f1-4433-85f3-4e22a88e449e-1665152003567d57dd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet.png",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16583389544677__9d2b923e-33f1-4433-85f3-4e22a88e449e-1665152003567d57dd-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 760,
+        "height_mobile": 280,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "a65626af-8505-496c-bc43-3b3e16f6dd26": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16583389544677__a65626af-8505-496c-bc43-3b3e16f6dd26-1665152003567d57dd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMAGE_3_978aa80f-80ba-4c3a-bce8-6bd4068b2b92.png",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16583389544677__a65626af-8505-496c-bc43-3b3e16f6dd26-1665152003567d57dd-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 860,
+        "height_mobile": 600,
+        "mobile_text_below": false,
+        "slideshow_autoplay": false,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "2b6b56eb-bfc8-4722-a3df-c1e062a0eb73": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Disclaimer",
+        "text": "<p>Our Custom Pet kits do not have a unique box in order to keep it as affordable as possible.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_bg": "#ecf1f2",
+        "color_title": "#333333",
+        "color_text": "#333333"
+      }
+    },
+    "d670070c-dc2a-4252-8d63-67dffb36b9f3": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "<p>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_bg": "#ecf1f2",
+        "color_title": "#333333",
+        "color_text": "#333333"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0572ef05-5503-4ef5-be65-3261548250b5",
+    "9d2b923e-33f1-4433-85f3-4e22a88e449e",
+    "a65626af-8505-496c-bc43-3b3e16f6dd26",
+    "2b6b56eb-bfc8-4722-a3df-c1e062a0eb73",
+    "d670070c-dc2a-4252-8d63-67dffb36b9f3",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

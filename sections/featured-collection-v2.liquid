@@ -1,0 +1,145 @@
+ {% if template contains 'product' %}
+   {% assign main_product = product %}
+   {% endif %}
+<section class="section_product12">
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="padding-section-large-10">
+        <div class="margin-bottom margin-xxlarge">
+          <div class="product12_heading-wrapper">
+            {% if section.settings.heading != blank %}
+            <div class="product12_heading">
+              <div class="div-block-2 _2">
+                <img alt="" class="image-165 lazyload hs-lazyload hs-id-5f415ef5" data-src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/blue-squiggle.png?v=1677233245" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+              </div>
+              <div class="max-width-large">
+                <div class="margin-bottom margin-xsmall _2">
+                  <h2 class="heading-24">{{ section.settings.heading }}</h2>
+                </div>
+              </div>
+            </div>
+              {% endif %}
+          </div>
+        </div>
+        <div
+          data-delay="4000"
+          data-animation="slide"
+          class="product12_component w-slider"
+          data-autoplay="false"
+          data-easing="ease"
+          data-hide-arrows="false"
+          data-disable-swipe="false"
+          data-autoplay-limit="0"
+          data-nav-spacing="3"
+          data-duration="500"
+          data-infinite="false"
+        >
+          <div class="product12_mask w-slider-mask">
+            {% for product in collections[section.settings.collection].products %}
+              {% if template contains 'product' %}
+                {% if product.handle != main_product.handle %}
+                    <div class="product12_slide w-slide">
+              <div class="product12_item">
+                <div class="margin-bottom margin-xsmall">
+                  <div class="product12_image-wrapper">
+                    <a href="{{ product.url }}">
+                    <img alt="" class="product12_image lazyload hs-lazyload hs-id-369a4f90" data-src="{{ product.featured_image | img_url:'' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 66vw, (max-width: 991px) 39vw, (max-width: 1439px) 24vw, 351.89453125px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="{{ product.featured_image | img_url:'' }} 500w, {{ product.featured_image | img_url:'' }} 800w, {{ product.featured_image | img_url:'' }} 900w">
+                      </a>
+                  </div>
+                </div>
+                <div class="margin-bottom margin-xsmall prods">
+                  <a href="{{ product.url }}" class="product12_text-link w-inline-block">
+                    <div class="product12_left">
+                      <div class="text-size-medium-3 text-weight-semibold">{{ product.title }}</div>
+                      <div class="text-size-small"><strong class="bold-text-13">Free Shipping to the USA</strong></div>
+                    </div>
+                    <div class="text-size-large text-weight-semibold">{{ product.price | money }}</div>
+                  </a>
+                </div>
+                   {%- form 'product', product -%}
+                     <input type="hidden" value="{{ product.variants.first.id }}" name="id">
+                     <button
+                          class="button is-secondary is-small max-width-full w-button"
+                          type="submit"
+                          name="add"
+                          data-add-to-cart
+                          {% unless product.available %}disabled{% endunless %}>
+                            <span data-add-to-cart-text>
+                              {%- if product.available -%}
+                                {{ 'products.product.add_to_cart' | t }}
+                              {%- else -%}
+                                {{ 'products.product.sold_out' | t }}
+                              {%- endif -%}
+                            </span>
+                        </button>
+                     {%- endform -%}
+              </div>
+            </div>
+                  {% endif %}
+                {% else %}
+            <div class="product12_slide w-slide">
+              <div class="product12_item">
+                <div class="margin-bottom margin-xsmall">
+                  <div class="product12_image-wrapper">
+                    <a href="{{ product.url }}">
+                    <img alt="" class="product12_image lazyload hs-lazyload hs-id-2f2fde80" data-src="{{ product.featured_image | img_url:'' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 66vw, (max-width: 991px) 39vw, (max-width: 1439px) 24vw, 351.89453125px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="{{ product.featured_image | img_url:'' }} 500w, {{ product.featured_image | img_url:'' }} 800w, {{ product.featured_image | img_url:'' }} 900w">
+                      </a>
+                  </div>
+                </div>
+                <div class="margin-bottom margin-xsmall prods">
+                  <a href="{{ product.url }}" class="product12_text-link w-inline-block">
+                    <div class="product12_left">
+                      <div class="text-size-medium-3 text-weight-semibold">{{ product.title }}</div>
+                      <div class="text-size-small"><strong class="bold-text-13">Free Shipping to the USA</strong></div>
+                    </div>
+                    <div class="text-size-large text-weight-semibold">{{ product.price | money }}</div>
+                  </a>
+                </div>
+                <a href="#" class="button is-secondary is-small max-width-full w-button">Add to cart</a>
+              </div>
+            </div>
+                {% endif %}
+            {% endfor %}
+          </div>
+          <div class="product12_arrow left w-slider-arrow-left">
+            <img alt="" class="lazyload hs-lazyload hs-id-e2ab4edc" data-src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031620b764aee7b_icon_slider-arrow-left.svg" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+          </div>
+          <div class="product12_arrow w-slider-arrow-right">
+            <img alt="" class="lazyload hs-lazyload hs-id-b321d5d5" data-src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/6243807090316275724aee79_icon_slider-arrow-right.svg" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+          </div>
+          <div class="product12slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section wf-section"></div>
+
+{% schema %}
+{
+  "name": "Featured Collection V2",
+  "settings": [
+                          {
+                          	"type":"text",
+                          	"id":"heading",
+                          	"label":"Heading"
+                          },
+                          {
+                          	"type":"collection",
+                          	"id":"collection",
+                          	"label":"Select Collection"
+                          }
+              ],
+   "presets": [
+     {
+       "name": "Featured Collection V2"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,130 @@
+<header class="section-features">
+  <div class="padding-global-4">
+    <div class="container-large">
+      <div class="padding-section-large-3 _1">
+        <div id="w-node-d6a42720-d2b8-cffd-9534-9e34f6779b41-a3d59884" class="layout254_image-wrapper"></div>
+        <div class="layout254_component">
+          <div class="margin-bottom-2 margin-xxlarge">
+            <div class="container-22 w-container">
+              <img alt="" class="image-102 lazyload hs-lazyload hs-id-39df827e" data-src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/white-squiggle_1white_squiggle.png?v=1677233246" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+            </div>
+            <div class="text-align-center-2">
+              <div class="max-width-large-3">
+                <div class="margin-bottom-2 margin-small">
+                  <h2 data-w-id="d6a42720-d2b8-cffd-9534-9e34f6779b4b" style="opacity:0" class="heading-14 _2">
+                    {{ section.settings.heading }}
+                  </h2>
+                  <div
+                    data-w-id="d6a42720-d2b8-cffd-9534-9e34f6779b4d"
+                    style="opacity:0"
+                    class="container-23 w-container"
+                  >
+                    <div class="text-block-23">{{ section.settings.subheading }}</div>
+                  </div>
+                </div>
+                {% if section.settings.image != blank %}
+                <img alt="" class="image-61 lazyload hs-lazyload hs-id-52aa0d8e" data-src="{{ section.settings.image | img_url:'' }}" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 45vw, (max-width: 1439px) 46vw, 600px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" srcset="{{ section.settings.image | img_url:'' }} 500w, {{ section.settings.image | img_url:'' }} 764w">
+                  {% endif %}
+                <div class="container-large _1">
+                  <div class="padding-section-large-4">
+                    <div class="w-layout-grid layout34_component">
+                      <div class="layout34_content">
+                        <div class="w-layout-grid layout34_item-list">
+                          {% for block in section.blocks %}
+                          <div id="w-node-d6a42720-d2b8-cffd-9534-9e34f6779b63-a3d59884" class="layout34_item {% if forloop.last %}_3{% endif %}">
+                            <div class="layout34_item-icon-wrapper">
+                              {% if block.settings.image != blank %}
+                              <img alt="" class="icon-1x1-medium-2 lazyload hs-lazyload hs-id-87a6a8b8" data-src="{{ block.settings.image | img_url:'' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                {% endif %}
+                            </div>
+                            <div
+                              data-w-id="d6a42720-d2b8-cffd-9534-9e34f6779b66"
+                              style="opacity:0"
+                              class="layout34_item-text-wrapper _1"
+                            >
+                              <div class="margin-bottom-2 margin-xsmall">
+                                <h3 class="heading-style-h5-3 _2">
+                                  <strong class="bold-text-11 _2">{{ block.settings.heading }}</strong>
+                                </h3>
+                              </div>
+                              <p class="paragraph-6 _1">
+                                {{ block.settings.description }}
+                              </p>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Icon Multicolumn",
+  "settings": [
+                    {
+                      "type":"text",
+                      "id": "heading",
+                      "label":"Heading"
+                    },
+                    {
+                      "type":"text",
+                      "id": "subheading",
+                      "label":"Sub Heading"
+                    },
+                    {
+                      "type":"textarea",
+                      "id": "description",
+                      "label":"Description"
+                    },
+                    {
+                      "type":"image_picker",
+                      "id": "image",
+                      "label":"Select Image",
+                       "info": "Recommended Size: 600 × 679 px"
+                    }
+              ],
+       "blocks":[
+            {
+              "type":"column",
+              "name":"Column",
+              "settings":[
+                        {
+                           "type":"image_picker",
+                           "id":"image",
+                           "label":"Select Icon"
+                         },
+                          {
+                          	"type":"text",
+                          	"id":"heading",
+                          	"label":"Heading"
+                          },
+                          {
+                          	"type":"textarea",
+                          	"id":"description",
+                          	"label":"Description"
+                          }
+                         ]
+            }
+      ],
+   "presets": [
+     {
+       "name": "Icon Multicolumn"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

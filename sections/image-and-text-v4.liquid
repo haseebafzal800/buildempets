@@ -1,0 +1,71 @@
+<section class="section_layout192">
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="padding-section-large-6">
+        <div class="w-layout-grid layout192_component">
+          <div class="layout192_image-wrapper">
+            {% if section.settings.image != blank %}
+            <img alt="" class="layout192_image lazyload hs-lazyload hs-id-33af50e7" data-src="{{ section.settings.image | img_url:'' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+              {% endif %}
+          </div>
+          <div id="w-node-acbacbcb-a0da-40fa-a030-34392cf8e822-a3d59884" class="layout192_content">
+            <div class="margin-bottom margin-xsmall _2">
+              {% if section.settings.subheading != blank %}
+              <div class="text-weight-semibold _4">{{ section.settings.subheading }}</div>
+              <img alt="" class="image-164 _2 lazyload hs-lazyload hs-id-6d22ce35" data-src="https://cdn.shopify.com/s/files/1/0257/5705/7114/files/blue-stars.png?v=1677233245" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                {% endif %}
+            </div>
+            <div class="margin-bottom margin-small">
+              <h2 class="heading-16">{{ section.settings.heading }}</h2>
+            </div>
+            <p class="text-size-medium-3 _1">{{ section.settings.description }}</p>
+          </div>
+        </div>
+        <div class="margin-top margin-medium">
+          <div class="button-group-2">
+            <p class="text-size-medium-3">{{ section.settings.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Image and Text V4",
+  "settings": [
+                    {
+                      "type":"image_picker",
+                      "id": "image",
+                      "label":"Select Image",
+                       "info": "Recommended Size: 598 × 336 px"
+                    },
+                    {
+                      "type":"text",
+                      "id": "subheading",
+                      "label":"Sub Heading"
+                    },
+                    {
+                      "type":"text",
+                      "id": "heading",
+                      "label":"Heading"
+                    },
+                    {
+                      "type":"textarea",
+                      "id": "description",
+                      "label":"Description"
+                    }
+              ],
+   "presets": [
+     {
+       "name": "Image and Text V4"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

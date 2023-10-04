@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "show_tax_and_shipping": false,
+        "enable_cart_notes": true,
+        "cart_terms_page": "",
+        "show_additional_checkout_buttons": false,
+        "show_backorder_text": false,
+        "show_recently_viewed": true,
+        "show_recently_viewed_vendor": false,
+        "show_shipping_calculator": false,
+        "shipping_calculator_default_country": "United States"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

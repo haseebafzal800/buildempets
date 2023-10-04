@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "enable_feature_header": false,
+        "grid": 4,
+        "grid_mobile": "2",
+        "pagination_limit": 20,
+        "show_total": true,
+        "show_vendor": false,
+        "show_filters": false,
+        "show_filter_prod_counts": true,
+        "show_sort_by": true,
+        "show_featured": false
+      }
+    },
+    "5c655289-b982-4645-a19d-90f9ae095235": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1672447270__pxl_20221228_184357254mp__huge.jpg",
+        "image_link": "https:\/\/www.buildempets.com\/products\/lego-custom-pet-building-kit",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Can't find your breed?",
+        "text": "<p>Our Custom Service can make a unique building kit design that resembles your own furry friend<\/p>",
+        "button_label": "More Info",
+        "button_link": "https:\/\/www.buildempets.com\/products\/lego-custom-pet-building-kit",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#1e3041",
+        "color_text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5c655289-b982-4645-a19d-90f9ae095235"
+  ]
+}

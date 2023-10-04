@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "cf3e4afd-cd23-427b-810b-8c83065cfedc": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": true,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "5040fa1d-a0c8-4b33-9a1b-31329cce105a": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Number Of Bricks: {{ product.metafields.my_fields.number_of_bricks.value }}<\/p>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": true,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong> <\/p><p>Once your item\/s is dispatched, the estimated delivery time is: <\/p><p>- USA: 7-20 business days <\/p><p>- UK: 7-20 business days <\/p><p>- Australia: 7-20 business days <\/p><p>- Europe: 7-20 business days <\/p><p>- Rest of world: 14-20 business days<br\/><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "1fb5f558-4666-4d24-bcf9-ba2104475198": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.6) -->\n{% if cart.currency.iso_code == shop.currency %}\n<script type=\"text\/javascript\">\n\/\/ Overrides:\n\/\/ var afterpay_min = 1.00;       \/\/ As per your Afterpay contract.\n\/\/ var afterpay_max = 2000.00;    \/\/ As per your Afterpay contract.\n\/\/ var afterpay_msg_size = 'sm';  \/\/ Can be 'xs', 'sm', 'md' or 'lg'.\n\/\/ var afterpay_bold_amount = true;\n\/\/ var afterpay_logo_theme = 'colour';  \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_modal_open_icon = true;\n\/\/ var afterpay_hide_upper_limit = false;\n\/\/ var afterpay_hide_lower_limit = true;\n\/\/ var afterpay_show_if_outside_limits = true;\n\/\/ var afterpay_cbt_enabled = false;\n\/\/ var afterpay_apr_loans_available = false;\n\n\/\/ var afterpay_product_integration_enabled = true;\n\/\/ var afterpay_product_selector = '#product-price-selector';\n\/\/ var afterpay_variable_price_fallback = false;\n\/\/ var afterpay_variable_price_fallback_selector = '';\n\/\/ var afterpay_variable_price_fallback_method = 'mutation';  \/\/ Can be 'mutation' or 'interval'.\n\n\/\/ var afterpay_cart_integration_enabled = true;\n\/\/ var afterpay_cart_static_selector = '#cart-subtotal-selector';\n\/\/ var afterpay_variable_subtotal_fallback = false;\n\/\/ var afterpay_variable_subtotal_fallback_selector = '';\n\/\/ var afterpay_variable_subtotal_fallback_method = 'mutation'; \/\/ Can be 'mutation' or 'interval'.\n\/\/ var afterpay_cart_dynamic_integration_enabled = false;\n\n\/\/ var afterpay_footer_logo_enabled = true;\n\/\/ var afterpay_footer_logo_format = 'icon';  \/\/ Can be 'icon', 'stacked' or 'logo'.\n\/\/ var afterpay_footer_logo_theme = 'colour'; \/\/ Can be 'colour', 'black' or 'white'.\n\/\/ var afterpay_footer_logo_background = 'border';  \/\/ Can be 'border' or 'transparent'.\n\/\/ var afterpay_footer_logo_container = 'footer ul.payment-icons';\n\/\/ var afterpay_footer_logo_template = '<li class=\"payment-icon\"><object data=\"{logo_path}\" type=\"image\/svg+xml\"><\/object><\/li>';\n\n\/\/ Non-editable fields:\nvar afterpay_js_language = {{ localization.language.iso_code | slice: 0, 2 | json }};\nvar afterpay_js_country = {{ localization.country.iso_code | json }};\nvar afterpay_shop_currency = {{ shop.currency | json }};\nvar afterpay_cart_currency = {{ cart.currency.iso_code | json }};\nvar afterpay_shop_money_format = {{ shop.money_format | json }};\nvar afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};\nvar afterpay_theme_name = {{ theme.name | json }};\nvar afterpay_product = {{ product | json }};\nvar afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};\nvar afterpay_cart_total_price = {{ cart.total_price | json }};\nvar afterpay_js_snippet_version = '1.1.6';\n<\/script>\n<script type=\"text\/javascript\" src=\"https:\/\/static.afterpay.com\/shopify-afterpay-javascript.js\"><\/script>\n{% else %}\n<!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->\n{% endif %}\n<!-- End Shopify-Afterpay JavaScript Snippet (v1.1.6) -->"
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "cf3e4afd-cd23-427b-810b-8c83065cfedc",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "vendor",
+        "type",
+        "variant_picker",
+        "5040fa1d-a0c8-4b33-9a1b-31329cce105a",
+        "buy_buttons",
+        "description",
+        "sharing",
+        "1fb5f558-4666-4d24-bcf9-ba2104475198"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "550b2a22-4046-411b-b1bb-0383fbead5fe": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/251432627_566073451316198_7909552937004182847_n-1-1664814693315.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "GET YOUR CREATIVE BLOOD PUMPING",
+        "text": "<p>Just think: In the past few months, how many times have you found yourself in a dull moment, eaten up by boredom? If you’re like most people, it was probably more than once :) No worries, though! This dog building kit will ignite that spark of creativity you need!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "5947667f-e10d-4363-8375-b441fd2fdf29": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/250956771_1576141496059989_4203276077779796733_n-1-1664814693317.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "GET YOUR KIDS OFF THEIR PHONES",
+        "text": "<p>Just think: In the past few months, how many times have you found yourself in a dull moment, eaten up by boredom? If you’re like most people, it was probably more than once :) No worries, though! This dog building kit will ignite that spark of creativity you need!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "700a71b0-7ace-438d-9873-a105749eeb5c": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1621000064__135045519_443389233359630_719856256284436339_n__huge-1664815006780.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "A ONE-OF-A-KIND GIFT IDEA",
+        "text": "<p>We all have at least one dog-enthusiastic friend in our lives… Well, now you’ve just found that one-of-a-kind gift idea you’ve been looking for.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "550b2a22-4046-411b-b1bb-0383fbead5fe",
+    "5947667f-e10d-4363-8375-b441fd2fdf29",
+    "700a71b0-7ace-438d-9873-a105749eeb5c",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

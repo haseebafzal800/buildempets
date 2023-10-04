@@ -1,0 +1,115 @@
+
+ <script>
+  document.documentElement.addEventListener('supercart:ready', (e) => {
+    setTimeout(() => {
+      let sf = document.querySelector('.supercart-footer');
+      if (sf) {
+        sf.insertAdjacentHTML('beforeend', `<div data-tbnadfield='GIFT_PICKER' data-tbnadhide='NO_GIFTS' data-tbnaddefault=''></div>`);
+      }
+    }, 100);
+  });
+</script>
+
+<script>
+  {% comment %}
+    {% if template contains 'cart' %}
+      window.location.href = '/?sc=true';
+    {% endif %}
+  {% endcomment %}
+
+  if (location.search.includes('sc=true')) {
+    document.documentElement.addEventListener('supercart:ready', (e) => {
+      const event = new CustomEvent('supercart:open', { })
+      document.documentElement.dispatchEvent(event);
+    })
+  }
+</script>
+<style>
+  .supercart-review {
+    flex-wrap: unset !important;
+  }
+  div#supercart button {
+    min-width: auto;
+  }
+
+  #supercart .flex {
+    flex-wrap: unset;
+  }
+  #supercart .flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    -webkit-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  div#supercart .supercart-qty-field button {
+    min-width: auto;
+    border-radius: var(--rounded) !important;
+    border-color: var(--qtyBorder) !important;
+    box-shadow: unset !important;
+  }
+
+  .bg .window-wrap .window button {
+      min-width: auto;
+      outline: none;
+      box-shadow: unset;
+  }
+
+  div#supercart_form_footer:after { background-image: url(https://cdn.shopify.com/s/files/1/0257/5705/7114/files/creditcards.jpg?v=1655238609); content: ' '; display: block; width: 100%; padding: 20px; background-size: contain; background-repeat: no-repeat; background-position: center 5px; } 
+
+  a.supercart-flyout-cart {
+      display: none;
+  }
+  form.super-cart-form {
+    text-decoration: none !important;
+  }
+  .supercart-header button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .flex.items-center.svelte-ys2ped {
+    flex-wrap: wrap;
+  }
+  a.supercart-line-title {
+    display: block;
+    width: 100%;
+  }
+
+  .tier-cart-tag {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #ff7903 !important;
+  }
+  .text-sm.svelte-ys2ped {
+    color: #000;
+  }
+  .tier-cart-grid {
+    text-align: center;
+  }
+  a.supercart-line-remove {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .hidden.text-sm.\!sm\:block.svelte-jlz6tm {
+    text-align: right;
+  }
+  
+  span.tier-total-cart-price {
+    font-weight: bold;
+  }
+  a.supercart-line-remove {
+    display: block !important;
+  }
+  
+  .supercart-footer afterpay-placement {
+        margin: 0;
+        color: #333;
+        margin-left: 10%;
+        margin-bottom: 5px;
+  }
+  
+  .product-price afterpay-placement {
+      margin: 0;
+  }
+</style>

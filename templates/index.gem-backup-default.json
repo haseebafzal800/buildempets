@@ -1,0 +1,337 @@
+{
+  "sections": {
+    "58553eb3-1d4c-491c-9022-b684a163b971": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/286850202_1786366091717719_662182527646325962_n_1.jpg",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Building Kits Of Popular Dog Breeds",
+        "text": "<p>First ever realistic dog building kits in many different stances and colors<\/p>",
+        "button_label": "Yes! Show Me Dogs",
+        "button_link": "shopify:\/\/collections\/build-em-dogs",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#005884",
+        "color_text": "#ffffff"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26221276_1632527966832292_738870126797729625_o.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "BUILDING KITS OF POPULAR DOG BREEDS",
+            "overlay_text": "First ever realistic dog designs in many different stances and colors",
+            "overlay_url_text_1": "Yes! Show Me Dogs",
+            "overlay_url_1": "shopify:\/\/collections\/build-em-dogs",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 25,
+            "overlay_position_y": 40,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/keikoribon_242214405_534559194310199_5420266501179400009_n.jpg",
+            "image_position": "top center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "BUILDING KITS OF POPULAR CAT BREEDS",
+            "overlay_text": "First ever realistic cat designs in many different stances and colors",
+            "overlay_url_text_1": "Yes! Show Me Cats",
+            "overlay_url_1": "shopify:\/\/collections\/build-em-cats",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 25,
+            "overlay_position_y": 40,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "5be38b37-f19b-496e-898e-d4e5763ce2ff": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l1lelel1l_241673370_599133004604644_864845575210849169_n.jpg",
+            "image_position": "top center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "BUILDING KITS OF MORE PETS",
+            "overlay_text": "First ever realistic pet designs in many different stances and colors",
+            "overlay_url_text_1": "Yes! Show Me More Pets",
+            "overlay_url_1": "shopify:\/\/collections\/other-pets",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 25,
+            "overlay_position_y": 40,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "5be38b37-f19b-496e-898e-d4e5763ce2ff"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 880,
+        "height_mobile": 240,
+        "mobile_text_below": true,
+        "slideshow_autoplay": false,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "settings": {
+        "title": "Most Popular Pet Collections",
+        "enlarge_title": true,
+        "collection_list": [
+          "build-em-dogs",
+          "build-em-cats",
+          "lego",
+          "custom-building-kit",
+          "christmas-collection"
+        ],
+        "grid": 5
+      }
+    },
+    "c3455a4e-4cc7-405a-837d-03410cba13a9": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486267109__c3455a4e-4cc7-405a-837d-03410cba13a9-1665090215ae3c47e1-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pf-377d71e2--Sans-titre.webp",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "Enter The World Of Build 'Em Pets",
+            "overlay_text": "We are a Dutch-based company, that specializes in creating premium pet building kits. You have the versatility of crafting dogs, cats & much more with our interlocking brick technology.",
+            "overlay_url_text_1": "Shop Now",
+            "overlay_url_1": "shopify:\/\/collections\/build-em-dogs",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 20,
+            "overlay_position_y": 40,
+            "color_label_background": "#fafafa",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486267109__c3455a4e-4cc7-405a-837d-03410cba13a9-1665090215ae3c47e1-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 240,
+        "mobile_text_below": true,
+        "slideshow_autoplay": false,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "4276d3f0-ba15-4432-ade9-8fe66f310dea": {
+      "type": "collection-list",
+      "settings": {
+        "title": "More Collections",
+        "enlarge_title": true,
+        "collection_list": [
+          "other-pets",
+          "cartoon-dogs",
+          "custom-pet-portrait",
+          "architecture-monuments",
+          "build-em-puzzles"
+        ],
+        "grid": 5
+      }
+    },
+    "4d0109ff-015a-4bc0-bb39-76de949d93dd": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16580486267109__4d0109ff-015a-4bc0-bb39-76de949d93dd-1665143061fac72a4d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/test2-1661975512465.webp",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486267109__4d0109ff-015a-4bc0-bb39-76de949d93dd-1665143061fac72a4d-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 560,
+        "height_mobile": 400,
+        "mobile_text_below": true,
+        "slideshow_autoplay": false,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "8607f44b-58a7-4ec1-86e2-4a962837bf1e": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16580486267109__8607f44b-58a7-4ec1-86e2-4a962837bf1e-166514306177cd899a-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>Great fun to make, instructions clear and great customer service<\/p>",
+            "image": "shopify:\/\/shop_images\/1662291067__6a2079dc-f8b0-4074-9361-67a20e1ad2b4__huge.jpg",
+            "author": "Leigh Patton"
+          }
+        },
+        "template--16580486267109__8607f44b-58a7-4ec1-86e2-4a962837bf1e-166514306177cd899a-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>I love these I have 3 now Husky Squirrel and Shitzu I wish I could get one in a hummingbird that would be awesome<\/p>",
+            "image": "shopify:\/\/shop_images\/1659110210__16591101663175754051502010377600__huge_1.jpg",
+            "author": "Sue Sandelin"
+          }
+        },
+        "bd82ec77-666c-4c35-8d2a-b73ee2593130": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>Great instructions. It took about 8 hours to complete. It's not easy. But excellent for teens and adults.<\/p>",
+            "image": "shopify:\/\/shop_images\/1654792603__176648251_285431269733737_28382598206702__huge_1.jpg",
+            "author": "Elroy"
+          }
+        },
+        "a31e727f-b9ce-46c0-847e-362e2f551869": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>So cute an adorable&lt;33 good quality and easy to follow instruction<\/p>",
+            "image": "shopify:\/\/shop_images\/1620999552__156017494_435993990962174_1823046420829475607_n__huge_1.jpg",
+            "author": "Nick"
+          }
+        }
+      },
+      "block_order": [
+        "template--16580486267109__8607f44b-58a7-4ec1-86e2-4a962837bf1e-166514306177cd899a-0",
+        "template--16580486267109__8607f44b-58a7-4ec1-86e2-4a962837bf1e-166514306177cd899a-1",
+        "bd82ec77-666c-4c35-8d2a-b73ee2593130",
+        "a31e727f-b9ce-46c0-847e-362e2f551869"
+      ],
+      "settings": {
+        "title": "Pet Parent Reviews",
+        "color_bg": "#ecf1f2",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_star": "#ffdd00",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "autoplay": false,
+        "autoplay_speed": 6,
+        "circle_images": false
+      }
+    }
+  },
+  "order": [
+    "58553eb3-1d4c-491c-9022-b684a163b971",
+    "slideshow",
+    "collection-list",
+    "c3455a4e-4cc7-405a-837d-03410cba13a9",
+    "4276d3f0-ba15-4432-ade9-8fe66f310dea",
+    "4d0109ff-015a-4bc0-bb39-76de949d93dd",
+    "8607f44b-58a7-4ec1-86e2-4a962837bf1e"
+  ]
+}

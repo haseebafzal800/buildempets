@@ -1,0 +1,67 @@
+<section>
+  <div style="padding: {{ section.settings.section_padding }}px 0" class="padding-global-6">
+    <div class="container-large">
+      <div class="padding-section-large-11">
+        <div class="badges">
+          {% for block in section.blocks %}
+            <div class="container-11 w-container">
+              <div class="div-block">
+                {% if block.settings.icon != blank %}
+                <img alt="" class="payment-icon-2 lazyload hs-lazyload hs-id-b49d2ad8" data-src="{{ block.settings.icon | img_url:'' }}" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                  {% endif %}
+              </div>
+              <div class="text-block-28">
+               {{ block.settings.heading }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Icon Multicolumn V2",
+  "settings": [
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "label": "Padding",
+      "default": 0
+    }
+  ],
+   "blocks":[
+            {
+              "type":"column",
+              "name":"Column",
+              "settings":[
+                        {
+                           "type":"image_picker",
+                           "id":"icon",
+                           "label":"Select Icon"
+                         },
+                          {
+                          	"type":"text",
+                          	"id":"heading",
+                          	"label":"Heading"
+                          }
+                         ]
+            }
+      ],
+   "presets": [
+     {
+       "name": "Icon Multicolumn V2"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_and_price": {
+          "type": "title_and_price",
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "ee76b8be-8dc0-4854-b927-9c94a20c7301": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "6209368b-7817-4b40-9471-9056fcf9f3a7": {
+          "type": "reviews_summary",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "2c86eac1-a4f0-45a2-a1d6-f1e4007aaef4": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Powerful Mini Vacuum Cleaner to safely remove dirt & dust from tight areas of your pet sets! This effectively keeps your precious pet models dirt & dust free!<\/p>"
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "type": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart_enabled": false,
+            "size_chart_option_name": "Size",
+            "size_chart_page_id": "size"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "show_backorder_text": false,
+            "show_inventory_notice": "never",
+            "show_inventory_count": "never",
+            "inventory_notice_threshold": 7
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "full_width": false,
+            "show_tabs": true,
+            "tab_2_title": "Shipping",
+            "tab_2_content": "<p><strong>Due to high demand, please expect slight delays!💜<\/strong><\/p><p>Once your item\/s is dispatched, the estimated delivery time is:<br\/>- USA: 7-14 business days<br\/>- UK: 7-18 business days<br\/>- Australia: 7-18 business days<br\/>- Europe: 7-18 business days<br\/>- Rest of world: 14-20 business days<br\/><br\/> Once it's shipped out, please allow 7-14 business days (to be safe) for domestic US shipping and 6-15 days for worldwide shipping during the Covid-19 pandemic & holiday season.<\/p><p><\/p>",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_3_page": ""
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_and_price",
+        "ee76b8be-8dc0-4854-b927-9c94a20c7301",
+        "6209368b-7817-4b40-9471-9056fcf9f3a7",
+        "2c86eac1-a4f0-45a2-a1d6-f1e4007aaef4",
+        "vendor",
+        "type",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "sharing"
+      ],
+      "settings": {
+        "enable_sticky_media": true,
+        "media_size": "medium",
+        "media_layout": "thumbnails-below",
+        "enable_video_looping": false
+      }
+    },
+    "e1f51e8e-d8c0-46a9-a31e-0cd023657ecd": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-1664817224713.webp",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Portable and Efficient",
+        "text": "<p>Compact size that is easy to hold & use. Simply connect USB port and kickstart the cleaning process! Noiseless and low power consumption!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "442b5957-90ff-4111-9b83-74e8e7137bff": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2-1664817224714.webp",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "right",
+        "title": "Unique Design",
+        "text": "<p>Built with unique dual cleaning nozzles- flat and brush nozzle, designed to reach cervical and deep clean ANY narrow gaps of your precious Pet Kits.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "b67598f5-8fe8-4f03-8fff-a02243377c15": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4-1664817224715.webp",
+        "image_link": "",
+        "image_size": "0",
+        "image_position": "left",
+        "title": "Clean Your Pet Kits With Ease!",
+        "text": "<p>Designed with high suction power to absorb heavy dust and dirt. Be it excess material or dirt, Mini Vacuum deep cleans tight spots of your lego with ease!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": true,
+        "text_alignment": "center",
+        "color_bg": "#dae4e6",
+        "color_text": "#333333"
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "grid": 4,
+        "show_vendor": false
+      }
+    },
+    "recent": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "show_recently_viewed": true,
+        "show_vendor": false
+      }
+    },
+    "16651484412899d24a": {
+      "type": "apps",
+      "blocks": {
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ba48be7a-dbf0-417b-b025-f45d5dda6acd"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e1f51e8e-d8c0-46a9-a31e-0cd023657ecd",
+    "442b5957-90ff-4111-9b83-74e8e7137bff",
+    "b67598f5-8fe8-4f03-8fff-a02243377c15",
+    "recommendations",
+    "recent",
+    "16651484412899d24a"
+  ]
+}

@@ -1,0 +1,449 @@
+<script>
+if (typeof __productWizRioAssets === 'undefined') {
+  var __productWizRioAssets = {{ shop.metafields.productwiz.rio-assets.value | default: shop.metafields.productwiz.rio-assets | json }};
+  if (typeof __productWizRioAssets === 'string') {
+    __productWizRioAssets = JSON.parse(__productWizRioAssets);
+  }
+}
+if (typeof __productWizRioProductOptionsScpShop === 'undefined') {
+  var __productWizRioProductOptionsScpShop = {{ shop.metafields.productwiz.rio-options-scp.value | default: shop.metafields.productwiz.rio-options-scp | json }};
+}
+if (typeof __productWizRioProductOptionsSettings === 'undefined') {
+  var __productWizRioProductOptionsSettings = {{ shop.metafields.productwiz.rio-options-settings.value | default: shop.metafields.productwiz.rio-options-settings | json }};
+}
+if (__productWizRioProductOptionsScpShop && __productWizRioProductOptionsScpShop.disabled) {
+  throw Error('Swatches on collection pages have been disabled');
+}
+
+if (typeof __productWizRioOptionsScp === 'undefined') {
+  var __productWizRioOptionsScp = {};
+  __productWizRioOptionsScp.renderQueue = [];
+  __productWizRioOptionsScp.queueRender = (rioOptionsScp) => {
+    const parseSafe = (str) => {
+      if (typeof str !== 'string' || !str || str === 'null') {
+        return null;
+      }
+      try {
+        return JSON.parse(str);
+      } catch (err) {
+      }
+      return null;
+    };
+
+    const productOptions = parseSafe(rioOptionsScp.getAttribute('data-rio-product-options-config'));
+    if (!productOptions) {
+      return;
+    }
+    if (!productOptions.enabled) {
+      return;
+    }
+    const hasOnlyDefaultVariant = rioOptionsScp.getAttribute('data-rio-product-has-only-default-variant');
+    if (hasOnlyDefaultVariant === 'true') {
+      return;
+    }
+    const product = parseSafe(rioOptionsScp.getAttribute('data-rio-product'));
+    if (!product) {
+      return;
+    }
+    const optionsWithValues = parseSafe(rioOptionsScp.getAttribute('data-rio-product-options-with-values'));
+    if (!optionsWithValues) {
+      return;
+    }
+
+    product.options = optionsWithValues;
+
+    __productWizRioOptionsScp.renderQueue.push([
+      rioOptionsScp,
+      {
+        product,
+        options: productOptions.options,
+        settings: { spacing: 1 },
+      },
+    ]);
+  };
+  (() => {
+    const preRenderAmount = 4;
+    const moneyFormat = {{ shop.money_format | json }};
+    const moneyFormatWithCurrency = {{ shop.money_with_currency_format | json }};
+    let settings = {{ shop.metafields.productwiz.rio-options-collections-sets.value | default: shop.metafields.productwiz.rio-options-collections-sets | json }};
+    if (typeof settings === 'string') {
+      settings = JSON.parse(settings);
+    }
+    if (!Array.isArray(settings)) {
+      settings = [];
+    }
+
+    const allProductsSet = settings.find((x) => x.id === 'all-products');
+    const customSets = settings.filter((x) => x.id !== 'all-products');
+
+    const getBestSet = (product) => {
+      const customSet = customSets.find((customSetParam) => {
+        const products = customSetParam.products || [];
+        const productParam = products.find((x) => x === `${product.id}`);
+        if (productParam) {
+          return true;
+        }
+        return false;
+      });
+      if (customSet) {
+        return customSet;
+      }
+      return allProductsSet;
+    };
+
+    const getBestSettings = (product) => {
+      const set = getBestSet(product);
+      const allProductOptions = product.options.map((x) => x.name);
+      const scaffold = {
+        selectedProductOptions: allProductOptions,
+        productOptionSettings: [],
+        variantImagePosition: 'center',
+      };
+      if (!set) {
+        return scaffold;
+      }
+      return {
+        ...scaffold,
+        selectedProductOptions: set.selectedProductOptions || [],
+        productOptionSettings: set.productOptionSettings || [],
+        variantImagePosition: set.variantImagePosition || 'center',
+      };
+    };
+
+    const getSettingsForOption = (bestSettings, optionId) => {
+      if (!bestSettings.selectedProductOptions.find((x) => x === optionId)) {
+        return {
+          visible: false,
+        };
+      }
+      return {
+        visible: true,
+        settings: {
+          swatchMaxSize: 40,
+          carousel: false,
+          hideOptionTitle: false,
+          centerOptionValue: false,
+          hideOuterText: false,
+          hideTooltips: false,
+          hideIfOneOptionValue: false,
+          ...(bestSettings.productOptionSettings.find((x) => x.id === optionId) || {}),
+        },
+      };
+    };
+
+    const applySettings = (renderItem) => {
+      const [, configParam] = renderItem;
+      const { product, options } = configParam;
+
+      const bestSettings = getBestSettings(product);
+      for (const option of options) {
+        const settingsForOption = getSettingsForOption(bestSettings, option.id);
+
+        const hideIfOneOptionValue = () => {
+          if (settingsForOption.settings.hideIfOneOptionValue) {
+            if (option.values.length <= 1) {
+              return true;
+            }
+          }
+          return false;
+        };
+
+        if (!settingsForOption.visible || hideIfOneOptionValue()) {
+          option.config.hide = true;
+        } else {
+          if (option.config.type === 'swatch') {
+            if (option.config.size > settingsForOption.settings.swatchMaxSize) {
+              option.config.size = settingsForOption.settings.swatchMaxSize;
+            }
+          }
+          if (settingsForOption.settings.carousel) {
+            option.config.horizontalCarousel = settingsForOption.settings.carousel;
+          }
+          if (settingsForOption.settings.hideOptionTitle) {
+            if (option.config.title) {
+              option.config.title.enabled = false;
+            }
+          }
+          if (settingsForOption.settings.centerOptionValue) {
+            option.config.centered = true;
+            option.config.horizontalCarousel = false;
+          }
+          if (settingsForOption.settings.hideOuterText) {
+            const disable = (root) => {
+              if (root.config.subtitle) {
+                root.config.subtitle.enabled = false;
+              }
+              if (root.config.title) {
+                root.config.title.enabled = false;
+              }
+              if (root.config.alert) {
+                root.config.alert.enabled = false;
+              }
+            };
+            if (option.config.type === 'select') {
+              if (option.config.select && option.config.select.outerText) {
+                disable({ config: option.config.select.outerText });
+              }
+            } else {
+              option.values.forEach((value) => {
+                disable(value);
+              });
+            }
+          }
+          if (settingsForOption.settings.hideTooltips) {
+            const disable = (root) => {
+              if (root.config.tooltip) {
+                root.config.tooltip.enabled = false;
+              }
+            };
+            if (option.config.type !== 'select') {
+              option.values.forEach((value) => {
+                disable(value);
+              });
+            }
+          }
+          option.config.title.displaySelectedOptionValue = false;
+        }
+      }
+
+      const hasVisibleOptions = options.find((x) => !x.config.hide) || false;
+      return {
+        hasVisibleOptions,
+        variantImagePosition: bestSettings.variantImagePosition,
+      };
+    };
+
+    const style = document.createElement('style');
+    style.textContent = `
+      .rio-options-scp div:empty {
+        display: block;
+      }
+      .rio-options-scp {
+        margin-top: 10px;
+      }
+      [class*="PwzrPopover"] div:empty {
+        display: block;
+      }
+    `;
+    document.head.appendChild(style);
+
+    function descendantQuerySelector(child, selector) {
+      if (!child || typeof selector !== 'string') {
+        return null;
+      }
+      let node = child.parentNode;
+      while (node) {
+        if (typeof node.matches === 'function' && node.matches(selector)) {
+          return node;
+        }
+        node = node.parentNode;
+      }
+      return null;
+    }
+
+    const hookCard = (renderItem) => {
+      const [rioOptionsScp, configParam] = renderItem;
+      const { product } = configParam;
+
+      if (rioOptionsScp.matches('.rio-options-loaded')) {
+        return null;
+      }
+
+      const {
+        hasVisibleOptions,
+        variantImagePosition,
+      } = applySettings(renderItem);
+
+      if (!hasVisibleOptions) {
+        return null;
+      }
+
+      if (__productWizRioProductOptionsSettings && !!__productWizRioProductOptionsSettings.translationAppIntegration) {
+        try {
+          const { options } = configParam;
+          options.forEach((option, index) => {
+            const optionProduct = product.options[index];
+            option.name = optionProduct.name;
+            option.id = optionProduct.name;
+            option.values.forEach((value, index2) => {
+              const valueProduct = optionProduct.values[index2];
+              value.id = valueProduct;
+              value.name = valueProduct;
+              if (
+                value.config.backgroundImage
+                      && typeof value.config.backgroundImage.id === 'string'
+                      && value.config.backgroundImage.id.startsWith('variant-image://')
+              ) {
+                const image = value.config.backgroundImage;
+                const src = image.id.replace('variant-image://', '');
+                const srcJ = JSON.parse(src);
+                srcJ.id = option.id;
+                srcJ.value = value.id;
+                image.id = `variant-image://${JSON.stringify(srcJ)}`;
+              }
+            });
+          });
+        } catch (err) {
+          console.log('Failed to re-index for app translation integration:');
+          console.log(err);
+        }
+      }
+
+      const cardRoot = descendantQuerySelector(rioOptionsScp, '.product-block');
+
+      function setImage(featuredMedia) {
+        if (!featuredMedia) {
+          return;
+        }
+
+        const cardImgsPrimary = cardRoot.querySelectorAll('.rimage__image');
+        for (const cardImg of cardImgsPrimary) {
+          const { preview_image: img, alt } = featuredMedia;
+          const src = __productWizRioOptionsScp.getSizedImageUrl(img.src, `${Math.ceil(cardImg.clientWidth * (window.devicePixelRatio || 1))}x`);
+          cardImg.removeAttribute('srcset');
+          cardImg.removeAttribute('sizes');
+          cardImg.src = src;
+          cardImg.width = img.width;
+          cardImg.height = img.height;
+          cardImg.style.objectFit = 'cover';
+          cardImg.style.objectPosition = variantImagePosition;
+          cardImg.alt = alt;
+        }
+
+        const cardImgsSecondary = cardRoot.querySelectorAll('.rimage-background');
+        for (const cardImg of cardImgsSecondary) {
+          const { preview_image: img } = featuredMedia;
+          const src = __productWizRioOptionsScp.getSizedImageUrl(img.src, `${Math.ceil(cardImg.clientWidth * (window.devicePixelRatio || 1))}x`);
+          cardImg.removeAttribute('data-bgset');
+          cardImg.style.backgroundImage = `url(${src})`;
+        }
+      }
+
+      function setTitle(variant) {
+        const cardPrices = cardRoot.querySelectorAll('.price');
+        for (const cardPrice of cardPrices) {
+          cardPrice.innerHTML = __productWizRioOptionsScp.formatMoney(
+            variant.price,
+            moneyFormat,
+          );
+        }
+      }
+
+      function setUrl(variant) {
+        const cardLinks = cardRoot.querySelectorAll('.product-block__title a, .product-block__image');
+        for (const cardLink of cardLinks) {
+          const newUrl = new URL(cardLink.href);
+          newUrl.searchParams.set('variant', variant.id);
+          cardLink.href = newUrl.href;
+        }
+      }
+
+      const onChange = (_selection, variant) => {
+        const variantFull = product.variants.find((x) => x.id === variant.id);
+        setImage(variantFull.featured_media);
+        setTitle(variantFull);
+        setUrl(variantFull);
+      };
+
+      const onRendered = () => {
+        rioOptionsScp.classList.add('rio-options-loaded');
+      };
+
+      const config = {
+        ...configParam,
+        onChange,
+      };
+
+      return [rioOptionsScp, config, onRendered];
+    };
+
+    function deferRender(sync, renderItem) {
+      if (typeof window.requestIdleCallback === 'function') {
+        if (sync) {
+          __productWizRioOptionsScp.render(renderItem);
+        } else {
+          window.requestIdleCallback(() => {
+            __productWizRioOptionsScp.render(renderItem);
+          });
+        }
+      } else {
+        if (document.readyState !== 'complete') {
+          window.addEventListener('load', () => {
+            window.setTimeout(() => {
+              __productWizRioOptionsScp.render(renderItem);
+            }, 1);
+          });
+        } else {
+          window.setTimeout(() => {
+            __productWizRioOptionsScp.render(renderItem);
+          }, 1);
+        }
+      }
+    }
+
+    const render = (sync, amount) => {
+      const renderItems = __productWizRioOptionsScp.renderQueue.slice(0, amount);
+      for (const renderItemParam of renderItems) {
+        const renderItem = hookCard(renderItemParam);
+        if (!renderItem) {
+          continue;
+        }
+        deferRender(sync, renderItem);
+      }
+      __productWizRioOptionsScp.renderQueue = __productWizRioOptionsScp.renderQueue.filter((x) => !renderItems.includes(x));
+      return renderItems;
+    };
+
+    __productWizRioOptionsScp.onLoad = () => {
+      let preRenderedItems = 0;
+      const doRender = async (preRender) => {
+        if (preRender) {
+          const preRendered = render(true, preRenderAmount);
+          preRenderedItems = preRendered.length;
+        } else {
+          if (preRenderedItems < preRenderAmount) {
+            render(true, preRenderAmount - preRenderedItems);
+          }
+          render(false);
+        }
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => doRender(false));
+      } else {
+        doRender(false);
+      }
+      doRender(true);
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function queryScps(addedNode) {
+        if (typeof addedNode.matches === 'function' && addedNode.matches('.rio-options-scp')) {
+          return [addedNode];
+        }
+        if (typeof addedNode.querySelectorAll === 'function') {
+          return addedNode.querySelectorAll('.rio-options-scp');
+        }
+        return [];
+      }
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          Array.from(mutation.addedNodes).forEach((addedNode) => {
+            const scps = queryScps(addedNode);
+            for (const scp of scps) {
+              __productWizRioOptionsScp.queueRender(scp);
+            }
+            if (scps.length > 0) {
+              render(false);
+            }
+          });
+        });
+      });
+      observer.observe(document, { childList: true, subtree: true });
+    });
+  })();
+}
+</script>
+{% if product == blank %}
+<link rel="stylesheet" {% if shop.metafields.productwiz.rio-css.value != blank %}href="{{ shop.metafields.productwiz.rio-css.value }}"{% else %}href="{{ 'productwiz-rio.min.css' | asset_url }}"{% endif %}>
+<script async {% if shop.metafields.productwiz.rio-js.value != blank %}src="{{ shop.metafields.productwiz.rio-js.value }}"{% else %}src="{{ 'productwiz-rio.min.js' | asset_url }}"{% endif %}></script>
+{% endif %}

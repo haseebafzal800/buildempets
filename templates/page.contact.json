@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "name": {
+          "type": "name_input",
+          "settings": {
+          }
+        },
+        "email": {
+          "type": "email_input",
+          "settings": {
+          }
+        },
+        "message": {
+          "type": "message_input",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "name",
+        "email",
+        "message"
+      ],
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left",
+        "use_columns": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

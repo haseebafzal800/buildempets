@@ -1,0 +1,93 @@
+<section data-w-id="896f249c-d5e7-e9a5-1178-262ef741e1b6" class="section_logo3">
+  <div class="margin-bottom margin-xxlarge">
+    <div class="text-align-center">
+      <div class="max-width-large align-center">
+        <div class="margin-bottom margin-small">
+          <h2 class="heading-22">{{ section.settings.heading }}</h2>
+        </div>
+        {% if section.settings.subheading != blank %}
+          <div class="margin-bottom margin-xsmall">
+            <div class="text-weight-semibold-2">{{ section.settings.subheading }}</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="padding-section-medium-2">
+    <div class="logo3_component">
+      <div class="logo3_list">
+        {% for block in section.blocks %}
+          {% if block.settings.logo != blank %}
+            <div id="w-node-_896f249c-d5e7-e9a5-1178-262ef741e1bf-a3d59884" class="logo3_wrapper">
+              <img
+                src="{{ block.settings.logo | img_url:'' }}"
+                loading="lazy"
+                sizes="(max-width: 479px) 122.67578125px, (max-width: 767px) 26vw, 143.14453125px"
+                srcset="{{ block.settings.logo | img_url:'' }} 500w, {{ block.settings.logo | img_url:'' }} 800w, {{ block.settings.logo | img_url:'' }} 1080w, {{ block.settings.logo | img_url:'' }} 1309w"
+                alt=""
+                class="logo3_logo"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="logo3_list">
+        {% for block in section.blocks %}
+          {% if block.settings.logo != blank %}
+            <div id="w-node-_896f249c-d5e7-e9a5-1178-262ef741e1d0-a3d59884" class="logo3_wrapper">
+              <img
+                src="{{ block.settings.logo | img_url:'' }}"
+                loading="lazy"
+                sizes="(max-width: 479px) 122.67578125px, (max-width: 767px) 26vw, 143.14453125px"
+                srcset="{{ block.settings.logo | img_url:'' }} 500w, {{ block.settings.logo | img_url:'' }} 800w, {{ block.settings.logo | img_url:'' }} 1080w, {{ block.settings.logo | img_url:'' }} 1309w"
+                alt=""
+                class="logo3_logo"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Moving Logos",
+  "settings": [
+                    {
+                      "type":"text",
+                      "id": "heading",
+                      "label":"Heading"
+                    },
+                    {
+                      "type":"text",
+                      "id": "subheading",
+                      "label":"Sub Heading"
+                    }
+              ],
+       "blocks":[
+            {
+              "type":"logo",
+              "name":"Logo",
+              "settings":[
+                        {
+                           "type":"image_picker",
+                           "id":"logo",
+                           "label":"Select Logo"
+                         }
+                         ]
+            }
+      ],
+   "presets": [
+     {
+       "name": "Moving Logos"
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

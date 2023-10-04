@@ -1,0 +1,156 @@
+{% for option in product.options_with_values %}
+  <div class="row js">
+    {%- capture option_id -%}{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
+    {%- assign swatches = false -%}
+
+    {%- if settings.swatch_enabled_productpage and settings.swatch_option_name contains option.name -%}
+      {%- assign swatches = true -%}
+    {%- endif -%}
+
+    {%- if swatches and settings.swatch_method == 'image' -%}
+      <style>
+        {%- assign option_index0 = forloop.index0 -%}
+        {%- for value in option.values -%}
+          {%- for variant in product.variants -%}
+            {%- if variant.options[option_index0] == value -%}
+              .product-detail[data-product-id="{{ product.id }}"] [data-swatch="{{ value | downcase | replace: '"', '' }}"]::before { --swatch-background-image: url({{ variant.featured_media.preview_image | img_url: '80x80', crop: settings.swatch_crop_align  }}) }
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </style>
+    {%- endif -%}
+
+    {%- if settings.variant_style == 'dropdown' -%}
+      <div class="option-selector" data-single-option-selector data-selector-type="dropdown" data-index="option{{ option.position }}">
+        {% render 'custom-select',
+          id: option_id,
+          label: option.name,
+          label_inside: true,
+          option_values: option.values,
+          selected_value: option.selected_value,
+          swatches: swatches
+        %}
+      </div>
+    {%- else -%}
+      {% if option.name ==  "size" or option.name ==  "Size" or option.name ==  "SIZE" or option.name == "Choose your size" %}
+        <fieldset class="option-selector product-form__input Size_options" data-single-option-selector data-selector-type="listed" data-index="option{{ option.position }}">
+<!--         <legend class="label">
+          {{- option.name -}}{% if swatches %} - <span class="js-option-title">{{ option.selected_value }}</span>{% endif %}
+        </legend> -->
+        <div class="option-selector__btns variant-button-row _1">
+          {%- for value in option.values -%}
+            <input class="opt-btn js-option" type="radio" name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ forloop.index0 }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
+            <label class="variant-button opt-label {% if value == "Normal" or value == "normal" or value == "NORMAL" %}normal_size {% elsif value == "Large" or value == "large" or value == "LARGE" %}large_size{% endif %} {% if swatches == true %}{% if settings.swatch_method == 'image' %} opt-swatch--image{% else %} opt-swatch--dot{% endif %}{% endif %}"
+                  {% if swatches == true %} data-swatch="{{ value | downcase | replace: '"', ''}}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}">
+            {{ value }}
+            {% if value == "Normal" or value == "normal" or value == "NORMAL" %}
+            {% elsif value == "Large" or value == "large" or value == "LARGE" %}
+              {% else %}
+            {% for variant in product.variants %} 
+              {% if variant.title contains value %}
+              <div class="VariantImg">
+                <img class="test-mode lazyload hs-lazyload hs-id-c9511c2c" data-src="{{ variant.featured_media | img_url:''}}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+              </div>
+              {%break%}
+              {%endif%}
+              {% endfor %}
+              {% endif %}
+            </label>
+
+          {%- endfor -%}
+        </div>
+      </fieldset>
+    {% elsif option.name ==  "color" or option.name ==  "Color" or option.name ==  "COLOR" or option.name == "Choose your color" %}
+        <fieldset class="option-selector product-form__input color_options" data-single-option-selector data-selector-type="listed" data-index="option{{ option.position }}">
+<!--         <legend class="label">
+          {{- option.name -}}{% if swatches %} - <span class="js-option-title">{{ option.selected_value }}</span>{% endif %}
+        </legend> -->
+          <div class="field-label">Pick a color</div>
+        <div class="option-selector__btns variant-button-row">
+          {%- for value in option.values -%}
+            {% assign first_for = forloop.index0 %}
+            <input class="opt-btn js-option" type="radio" name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ forloop.index0 }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
+            <label class="opt-label{% if swatches == true %}{% if settings.swatch_method == 'image' %} opt-swatch--image{% else %} opt-swatch--dot{% endif %}{% endif %}"
+            {% if swatches == true %} data-swatch="{{ value | downcase | replace: '"', ''}}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}">
+            
+            {% if product.metafields.custom.variant_color %}
+              {% for color_option in product.metafields.custom.variant_color.value %}
+                {% assign second_for = forloop.index0 %}
+                {% if first_for == second_for %}
+                  <span class="color_{{value  | handleize }}" style="background: {{ color_option }}">
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <span class="color_{{value  | handleize }}" style="background: {{ value }}">
+            {% endif %}
+            
+            </label>
+          {%- endfor -%}
+        </div>
+      </fieldset>
+    {% elsif option.name ==  "postures" or option.name ==  "Postures" or option.name ==  "POSTURES" or option.name == "Choose your posture" %}
+        <fieldset class="option-selector product-form__input Postures_options" data-single-option-selector data-selector-type="listed" data-index="option{{ option.position }}">
+<!--         <legend class="label">
+          {{- option.name -}}{% if swatches %} - <span class="js-option-title">{{ option.selected_value }}</span>{% endif %}
+        </legend> -->
+          <div
+                      data-hover="false"
+                      data-delay="200"
+                      data-w-id="f74a1170-1191-1dd5-b7a1-2c7a5a9c8942"
+                      class="navbar-dropdown8_component mobile w-dropdown"
+                    >
+           <div class="navbar-dropdown8_dropdown-toggle w-dropdown-toggle">
+                        <div class="dropdown-icon w-embed">
+                          <svg
+                            width=" 100%"
+                            height=" 100%"
+                            viewbox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                        <div class="text-block-27">Select a Posture!</div>
+                      </div>
+        <div class="option-selector__btns navbar-dropdown8_dropdown-list w-dropdown-list" data-w-id="f74a1170-1191-1dd5-b7a1-2c7a5a9c8947">
+          {%- for value in option.values -%}
+            <input class="opt-btn js-option" type="radio" name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ forloop.index0 }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
+            <label class="opt-label{% if swatches == true %}{% if settings.swatch_method == 'image' %} opt-swatch--image{% else %} opt-swatch--dot{% endif %}{% endif %}"
+                  {% if swatches == true %} data-swatch="{{ value | downcase | replace: '"', ''}}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}">
+           {% for variant in product.variants %} 
+              {% if variant.title contains value %}
+              <div class="VariantImg">
+                <img class="test-mode lazyload hs-lazyload hs-id-3643d203" data-src="{{ variant.featured_media | img_url:''}}" for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+              </div>
+              {%break%}
+              {%endif%}
+              {% endfor %}
+            </label>
+
+          {%- endfor -%}
+        </div>
+      </fieldset>
+    {% else %}
+      <fieldset class="option-selector general-options" data-single-option-selector data-selector-type="listed" data-index="option{{ option.position }}">
+        <legend class="label">
+          {{- option.name -}}{% if swatches %} - <span class="js-option-title">{{ option.selected_value }}</span>{% endif %}
+        </legend>
+        <div class="option-selector__btns">
+          {%- for value in option.values -%}
+            <input class="opt-btn js-option" type="radio" name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ forloop.index0 }}" value="{{ value | escape }}"{% if option.selected_value == value %} checked{% endif %}>
+            <label class="opt-label{% if swatches == true %}{% if settings.swatch_method == 'image' %} opt-swatch--image{% else %} opt-swatch--dot{% endif %}{% endif %}"
+                  {% if swatches == true %} data-swatch="{{ value | downcase | replace: '"', ''}}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}">{{ value }}</label>
+
+          {%- endfor -%}
+        </div>
+      </fieldset>
+    {% endif %}
+      {%- if show_size_chart == true and option.name == block.settings.size_chart_option_name -%}
+        <a href="{{ size_chart_page.url }}" class="standard-link tiny-text size-chart-link js-size-chart-open">{{ 'products.product.show_size_chart' | t }}</a>
+      {%- endif -%}
+    {%- endif -%}
+
+  </div>
+{% endfor %}

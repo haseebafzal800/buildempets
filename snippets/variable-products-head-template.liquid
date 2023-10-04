@@ -1,0 +1,16 @@
+{%- if collection and product == null -%}
+  {% render 'hs-defer-css' with filename: 'variable-products-load.css', pages: 'collection,index,product' | split: ',', minify: false, local: true, linkId: 'variable-products-load-css' %}
+  {% if false %}
+    {% render 'hs-defer-css' with filename: 'variable-products.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+  {% endif %}
+{%- endif -%}
+{% if collection or product or false %}
+  <script defer src="{{ 'variable-products.js' | asset_url }}" type="text/javascript"></script>
+{% else %}
+  <script>
+    document.querySelectorAll('[data-behavior="variable-products"]').forEach(e => { e.remove() })
+    setInterval(() => {
+      document.querySelectorAll('[data-behavior="variable-products"]').forEach(e => { e.remove() })
+    }, 500);
+  </script>
+{% endif %}

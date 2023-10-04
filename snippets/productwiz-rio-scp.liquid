@@ -1,0 +1,18 @@
+{% if product %}
+<div class="rio-options-scp" 
+    data-rio-product="{{product | json | escape}}" 
+    data-rio-product-options-with-values="{{product.options_with_values | json | escape}}"
+    data-rio-product-has-only-default-variant="{{product.has_only_default_variant | escape}}"
+    data-rio-product-options-config="{{ product.metafields.productwiz.rio-options.value | default: product.metafields.productwiz.rio-options | json | escape }}"
+></div>
+<script>
+    (() => {
+        if (document.readyState === 'loading') {
+            const elem = document.currentScript.parentElement.querySelector('.rio-options-scp');
+            if (__productWizRioOptionsScp) {
+                __productWizRioOptionsScp.queueRender(elem);
+            }
+        }
+    })();
+</script>
+{% endif %}

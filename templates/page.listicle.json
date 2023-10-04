@@ -1,0 +1,365 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "615e4a40-6258-4744-9ece-5e7f04860dec": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Enter the World of Build 'Em Pets",
+        "text": "<p>First ever realistic dog designs in many different stances and colors<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/build-em-dogs",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": true,
+        "color_bg": "#ffffff",
+        "color_title": "#015884",
+        "color_text": "#333333"
+      }
+    },
+    "1ce30c23-10bc-4db3-bf18-687b2a824d39": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__1ce30c23-10bc-4db3-bf18-687b2a824d39-16761322869418b02e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_55cdfa72-75ed-42bc-b326-fdee543dceb9.jpg",
+            "image_position": "top center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__1ce30c23-10bc-4db3-bf18-687b2a824d39-16761322869418b02e-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 460,
+        "height_mobile": 480,
+        "mobile_text_below": false,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "b618d3f0-bdb6-4c41-8f90-1dc28e194c4c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__b618d3f0-bdb6-4c41-8f90-1dc28e194c4c-16761322869418b02e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/custom.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__b618d3f0-bdb6-4c41-8f90-1dc28e194c4c-16761322869418b02e-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 960,
+        "height_mobile": 500,
+        "mobile_text_below": false,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "cb03dc9e-89b1-424e-b026-3ae6053bed72": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__cb03dc9e-89b1-424e-b026-3ae6053bed72-16761322869418b02e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/q.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__cb03dc9e-89b1-424e-b026-3ae6053bed72-16761322869418b02e-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "bfdc082a-8d76-4039-b111-b49b343fdb9c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__bfdc082a-8d76-4039-b111-b49b343fdb9c-16761322869418b02e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tq.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__bfdc082a-8d76-4039-b111-b49b343fdb9c-16761322869418b02e-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "bc690157-d900-4293-94b6-74a8b1a6cd85": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__bc690157-d900-4293-94b6-74a8b1a6cd85-16761322869418b02e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tt.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__bc690157-d900-4293-94b6-74a8b1a6cd85-16761322869418b02e-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "41dbedaa-85d5-4766-9b68-a0e3a1edc31c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16707090972901__41dbedaa-85d5-4766-9b68-a0e3a1edc31c-16761322869418b02e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ww.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "overlay_title": "",
+            "overlay_text": "",
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "enlarge_title": false,
+            "enlarge_text": false,
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16707090972901__41dbedaa-85d5-4766-9b68-a0e3a1edc31c-16761322869418b02e-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "16761345707557b353": {
+      "type": "apps",
+      "blocks": {
+        "40d39441-6a64-4e72-8b99-0bee62044196": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "40d39441-6a64-4e72-8b99-0bee62044196"
+      ],
+      "settings": {
+      }
+    },
+    "48d27e85-3b24-4d4a-8539-054808f5ec34": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Show Love For Your Favorite Pet!",
+        "text": "<p>A fun and challenging experience, that delivers a cute and aesthetically beautiful pet model.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/build-em-dogs",
+        "url_style": "button_1",
+        "enlarge_title": true,
+        "enlarge_text": false,
+        "full_width": true,
+        "color_bg": "#ffffff",
+        "color_title": "#015884",
+        "color_text": "#333333"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "615e4a40-6258-4744-9ece-5e7f04860dec",
+    "1ce30c23-10bc-4db3-bf18-687b2a824d39",
+    "b618d3f0-bdb6-4c41-8f90-1dc28e194c4c",
+    "cb03dc9e-89b1-424e-b026-3ae6053bed72",
+    "bfdc082a-8d76-4039-b111-b49b343fdb9c",
+    "bc690157-d900-4293-94b6-74a8b1a6cd85",
+    "41dbedaa-85d5-4766-9b68-a0e3a1edc31c",
+    "16761345707557b353",
+    "48d27e85-3b24-4d4a-8539-054808f5ec34"
+  ]
+}
